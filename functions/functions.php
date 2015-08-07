@@ -8,7 +8,7 @@ function FlushValue($value) {
 // 
 function GetURLVar($var, $default) {
     // 
-    if( isset($GET[$var] ) {
+    if( isset($GET[$var] )) {
         return $GET[$var];
     } else {
         return $default;
