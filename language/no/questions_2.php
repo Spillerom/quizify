@@ -6,23 +6,17 @@ $questions = [
             [
                 'text' => '«Alexander Molteberg spilt av Lene Kongsvik Johansen', 
                 'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => [
-                	'text' = 'Korrekt, eller «sykt stålkontroll» som Alexander ville sagt'
-                ]
+            	'feedback' => 'Korrekt, eller «sykt stålkontroll» som Alexander ville sagt'
             ],
             [
                 'text' => 'Ine Jansen på TVNorges julebord i 2012',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0'
-                'feedback' => [
-                	'text' = 'Bare lat som ingenting hvis du møter henne'
-                ]
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+            	'feedback' => 'Bare lat som ingenting hvis du møter henne'
             ],
             [
                 'text' => 'Jarle Andhøy snøvla det da han slentra forbi kontoret i stad',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0'
-                'feedback' => [
-                	'text' = 'Fun fact: Vi har ikke hørt fra Jarle etter han dro til Antarktis med Anne Kat.(emoji)'
-                ]
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+            	'feedback' => 'Fun fact: Vi har ikke hørt fra Jarle etter han dro til Antarktis med Anne Kat.(emoji)'
             ]
         ]
 	],
@@ -32,23 +26,17 @@ $questions = [
             [
                 'text' => 'Espen Eckbo rydder opp - hjemme',
                 'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => [
-                	'text' = 'Gjeeesp'
-                ]
+            	'feedback' => 'Gjeeesp'
             ],
             [
                 'text' => '«Odda» og Henrik nakendater',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0'
-                'feedback' => [
-                	'text' = 'Eventuelt Hver gang vi nakendater eller Skal vi nakendate'
-                ]
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+            	'feedback' => 'Eventuelt Hver gang vi nakendater eller Skal vi nakendate'
             ],
             [
                 'text' => 'Hvem kan slå Kristian Valen og Lilli Bendriss',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0'
-                'feedback' => [
-                	'text' = 'Vi vippser deg 100 kroner hvis du tør å foreslå konseptet for Kristian og Lilli'
-                ]
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Vi vippser deg 100 kroner hvis du tør å foreslå konseptet for Kristian og Lilli'
             ]
         ]
     ],
@@ -58,23 +46,17 @@ $questions = [
             [
                 'text' => 'Det er altfor lite reklame på TV nå om da`n',
                 'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => [
-                	'text' = 'Saklig. Det har du aldri sagt'
-                ]
+            	'feedback' => 'Saklig. Det har du aldri sagt'
             ],
             [
                 'text' => 'TVNorge er klart best på humor',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0'
-                'feedback' => [
-                	'text' = 'Motta 1 000 000 poeng'
-                ]
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+            	'feedback' => 'Motta 1 000 000 poeng'
             ],
             [
                 'text' => 'Jeg ser nesten ikke på TV lenger, jeg. Det er så mye bra på Netflix og Popcorn Time',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0'
-                'feedback' => [
-                	'text' = 'Blah blah blah, vi hører ikke hva du sier'
-                ]
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+            	'feedback' => 'Blah blah blah, vi hører ikke hva du sier'
             ]
         ]
     ],
@@ -84,23 +66,17 @@ $questions = [
             [
                 'text' => 'NRK planter kringkastingsmicrochips i nyfødte barn gjennom vaksineprogrammet, finansiert av økt lisensavgift',
                 'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => [
-                	'text' = '#KonspirasjonNRK #TheTruthIsOutThere'
-                ]
+            	'feedback' => '#KonspirasjonNRK #TheTruthIsOutThere'
             ],
             [
                 'text' => 'Google glasses som streamer Monster-HD med 17G',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0'
-                'feedback' => [
-                	'text' = 'Pornobransjen må bare bli enig om standard format først'
-                ]
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+            	'feedback' => 'Pornobransjen må bare bli enig om standard format først'
             ],
             [
                 'text' => 'Cirka sånn som vi ser på TV i dag',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0'
-                'feedback' => [
-                	'text' = 'Det høres koseligst ut'
-                ]
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+            	'feedback' => 'Det høres koseligst ut'
             ]
         ]
     ],
@@ -110,23 +86,17 @@ $questions = [
             [
                 'text' => 'En blind date uten klær',
                 'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => [
-                	'text' = 'Sliter du på Tinder? (Eventuelt Grindr)'
-                ]
+            	'feedback' => 'Sliter du på Tinder? (Eventuelt Grindr)'
             ],
             [
                 'text' => 'Skamløs kjendisjournalistikk',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0'
-                'feedback' => [
-                	'text' = 'Se og Hør kommer til å fremstå som IKEA-katalogen når Kjendiskveld med Magnus Devold går på lufta'
-                ]
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+            	'feedback' => 'Se og Hør kommer til å fremstå som IKEA-katalogen når Kjendiskveld med Magnus Devold går på lufta'
             ],
             [
                 'text' => 'Lokkene til Vegard Ylvisåker',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0'
-                'feedback' => [
-                	'text' = 'Han lukter godt også FYI'
-                ]
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+            	'feedback' => 'Han lukter godt også FYI'
             ]
         ]
     ]

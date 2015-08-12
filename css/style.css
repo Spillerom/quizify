@@ -1,84 +1,72 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
- *    v2.0 | 20110126
- *       License: none (public domain)
- *       
- */
-
-/*
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-*/
-/* HTML5 display-role reset for older browsers */
-/*
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-*/
 
 
-/*
- * App-specific styles:
- *
- */
+/*TVNORGE FONTS*/
+
+@font-face {
+    font-family: 'tvnorgebold';
+    src: url('../tvnorge-webfonts/tvnorge-bold-webfont.eot');
+    src: url('../tvnorge-webfonts/tvnorge-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../tvnorge-webfonts/tvnorge-bold-webfont.woff2') format('woff2'),
+         url('../tvnorge-webfonts/tvnorge-bold-webfont.woff') format('woff'),
+         url('../tvnorge-webfonts/tvnorge-bold-webfont.ttf') format('truetype'),
+         url('../tvnorge-webfonts/tvnorge-bold-webfont.svg#tvnorgebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'tvnorgeheadline';
+    src: url('../tvnorge-webfonts/tvnorge-headline-webfont.eot');
+    src: url('../tvnorge-webfonts/tvnorge-headline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../tvnorge-webfonts/tvnorge-headline-webfont.woff2') format('woff2'),
+         url('../tvnorge-webfonts/tvnorge-headline-webfont.woff') format('woff'),
+         url('../tvnorge-webfonts/tvnorge-headline-webfont.ttf') format('truetype'),
+         url('../tvnorge-webfonts/tvnorge-headline-webfont.svg#tvnorgeheadline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'tvnorgeregular';
+    src: url('../tvnorge-webfonts/tvnorge-regular-webfont.eot');
+    src: url('../tvnorge-webfonts/tvnorge-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../tvnorge-webfonts/tvnorge-regular-webfont.woff2') format('woff2'),
+         url('../tvnorge-webfonts/tvnorge-regular-webfont.woff') format('woff'),
+         url('../tvnorge-webfonts/tvnorge-regular-webfont.ttf') format('truetype'),
+         url('../tvnorge-webfonts/tvnorge-regular-webfont.svg#tvnorgeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body{
-	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-family: "tvnorgeregular", Arial, sans-serif;
 	color: #000;
 	background: #fff;
+}
+
+.metadata {
+	display: none;
 }
 
 #main {
 }
 
 #questions {
-	display: none;
+   margin-top: 15%;
 }
+	.question-container {
+		display: none;
+	}
 
-.question-container {
-}
-
-#feedbacks {
-	background: aqua;
-	min-height: 100%;
-	
-	
-}
 	.feedback-container {
 		font-size: 3em;
 		text-align: center;
@@ -86,7 +74,23 @@ body{
 		display: none;
 	}
 	
-	#feedback-1-1{
+/*	#feedback-1-1{
 		display: block; 
 	}
+
+*/
+.button{
+	text-align: center;
+	margin-top: 4em;
+
+}
+
+
+.button a {
+    color: #fff;
+    padding: 15px 20px;
+    background-color: #ffafb0;
+    text-decoration: none;
+    border-radius: 3px;
+  }  
 
