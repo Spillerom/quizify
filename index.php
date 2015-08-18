@@ -39,10 +39,8 @@ require_once 'language/'.$language.'/questions.php';
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
-		</head>
-
+	</head>
 	<body lang="no" ontouchstart="" onmouseover="">
-	
 		<script>
 		  window.fbAsyncInit = function() {
 		          FB.init({
@@ -69,17 +67,14 @@ require_once 'language/'.$language.'/questions.php';
 			</section>
 		</header>
 		
-		<article class="oneway">
+		<nav class="oneway">
 			<section class="wrapper">
-						<div class="stepbystep-nav"></div>
+			    <div class="stepbystep-nav"></div>
 			</section>
-		</article>
-		
-				
-	<div id="questions" class="q-wrapper">
-		   
-		    
-		    <?php
+		</nav>
+						
+    	<div id="questions" class="q-wrapper">
+    	    <?php
 		    for( $i=0; $i<count($questions); $i++ ) {
 		        $question = $questions[$i];
 		    ?>
@@ -87,27 +82,30 @@ require_once 'language/'.$language.'/questions.php';
     
 		        <article class="oneway wrapper">
 		        	<h1 class="question"><?php FlushValue($question['question']); ?></h1>
-		        </article>
+                </article>
+
 		        <article class="twoway">
 			        <section class="wrapper">
 				        <div class="alternatives">
 				            <?php
 				            $alternatives = $question['alternatives'];
-				            foreach( $alternatives as $alternative ) {
-				            	
+                            for( $j=0; $j<count($alternatives); $j++ ) {
+                                $alternative = $alternatives[$j];
 				            ?>
 				            <div class="alternative">
-				            <h3 class="text">
-				            <input id="radio1" type="radio" name="radio" value="1" checked="checked"><label for="radio1"><span><span></span></span>Option 1</label>
- 
-				            <a href="#"><?php FlushValue($alternative['text']); ?></a></h3>
-				                <div class="metadata"><?php FlushValue($alternative['score']); ?></div>
+                                <input id="radio-<?php FlushValue($i + 1); ?>-<?php FlushValue($j + 1); ?>" type="radio" name="radio" value="1" checked="checked">
+                                <label for="radio-<?php FlushValue($i + 1); ?>-<?php FlushValue($j + 1); ?>">
+                                    <span><span></span></span>
+                                    <?php FlushValue($alternative['text']); ?>
+                                </label>
+                                <div class="metadata"><?php FlushValue($alternative['score']); ?></div>
 				            </div>		
 				            <?php
 				            }
 				            ?>
 						</div><!-- end alternatives -->
-			     </section>
+                    </section>
+
 			      	<section class="wrapper">
 					    <figure >    
 					        <img class="wayimage" src="images/952x636.png" alt="imagetest">
@@ -122,38 +120,31 @@ require_once 'language/'.$language.'/questions.php';
 		    
 		</div> <!-- end q-wrapper --> 
 	
-		<article class="oneway">		
-			<section class="wrapper">
-				<div id="feedbacks" class="f-wrapper">
-				    <?php
-				    for( $i=0; $i<count($questions); $i++ ) {
-				        $question = $questions[$i];
-			            $alternatives = $question['alternatives'];
-					    for( $j=0; $j<count($alternatives); $j++ ) {
-			            	$alternative = $alternatives[$j];
-			            	$feedback = $alternative["feedback"];
-			            ?>
-			            <div id="feedback-<?php FlushValue($i + 1); ?>-<?php FlushValue($j + 1); ?>" class="feedback-container"><?php FlushValue($feedback); ?></div>
-			            <?php
-			            }
-				    }
-				    ?>
-				</div> <!-- end f-wrapper -->
-			</section>
-		</article>
+		<div id="feedbacks" class="feedback-wrapper">
+            <div class="fullscreen-background"></div>
+		    <?php
+		    for( $i=0; $i<count($questions); $i++ ) {
+		        $question = $questions[$i];
+	            $alternatives = $question['alternatives'];
+			    for( $j=0; $j<count($alternatives); $j++ ) {
+	            	$alternative = $alternatives[$j];
+	            	$feedback = $alternative["feedback"];
+            ?>
+            <h3 id="feedback-<?php FlushValue($i + 1); ?>-<?php FlushValue($j + 1); ?>" class="feedback-container"><?php FlushValue($feedback); ?></h3>
+            <?php
+                }
+            }
+            ?>
+        </div>
 		
 		<!-- jQuery -->
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		
-		<!-- Quizify -->
-		<script src="js/quizify.js"></script>
 
 		<!-- load Greensock TweenMax -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.2/TweenMax.min.js"></script>
-		
 			
-					  	
-	</body>
-
+		<!-- Quizify -->
+		<script src="js/quizify.js"></script>
+    </body>
 </html>
