@@ -63,7 +63,7 @@ require_once 'language/'.$language.'/questions.php';
 
 		<header>
 			<section class="logo">
-				<img src="images/dnetworks@2x.png" width="122" height="52" alt="Discovery Networks logo" />
+				<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
 			</section>
 		</header>
 		
@@ -108,7 +108,7 @@ require_once 'language/'.$language.'/questions.php';
 
 			      	<section class="wrapper">
 					    <figure >    
-					        <img class="wayimage" src="images/952x636.png" alt="imagetest">
+					        <img class="wayimage" src="images/952x636_poster_test.png" alt="Poster">
 					    </figure>     
 				        </div>
 			        </section>
@@ -136,6 +136,15 @@ require_once 'language/'.$language.'/questions.php';
             }
             ?>
         </div>
+
+		<!-- Body border -->
+		<!--[if lte IE 6]>
+			<style>#top, #bottom, #left, #right { display: none; }</style>
+		<![endif]-->
+		<b id="left"></b>
+		<b id="right"></b>
+		<b id="top"></b>
+		<b id="bottom"></b>
 		
 		<!-- jQuery -->
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>

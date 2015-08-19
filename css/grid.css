@@ -59,11 +59,7 @@ html {
   -ms-text-size-adjust: 100%;
   text-rendering:optimizelegibility;
 }
-body {
-  -webkit-font-smoothing: antialiased;
-  min-height: 100%;
-  font-size: 100%;
-}
+
 article,
 aside,
 details,
@@ -202,10 +198,6 @@ body {
   line-height: 1.0909090909090908em;
 }
 
-h1{
-    font-weight: 400;
-}
-
 h1, h2 {
   margin: 1.923077em 0 2.3846153846153846em;
 }
@@ -284,7 +276,13 @@ header{
 	margin-top: 4em;
 }
 
-
+/* Don´t show page border */
+@media screen and (max-width: 40em) {
+		
+	#top, #bottom, #left, #right { 
+  		display: none; 
+  	}
+}
 /*
 *
 *  Four-column grid active
@@ -303,7 +301,7 @@ header{
 /*     background-color: pink; */
   }
   
-	.oneway, .twoway{
+  	.oneway, .twoway{
 	  margin: 0 5.555555555555555%;
 	  clear: both;
 	}
@@ -343,10 +341,20 @@ header{
     /* Reset baseline grid to 16/16 = 1 */
   
     font-size: 1em;
-    background-color: yellow;
+/*     background-color: yellow; */
+  }
+  
+  #top, #bottom, #left, #right { 
+  		display: none; 
   }
 
 }
+
+/* iPads */
+/* Don´t show page border */
+/* (min-device-width: 768px) and (max-device-width: 1024px) */
+
+
 /* @media screen and (min-width: 888px) */
 @media screen and (min-width: 55.5em) {
   body {
@@ -355,11 +363,12 @@ header{
     font-size: 1.0625em;
 /*     background-color: teal; */
   }
-
+  
+  
   
   h1{
   	margin-bottom: 1.5em;
-  	width: 13em;
+  	width: 16em;
   }
   
  	 .twoway .wrapper {
@@ -370,7 +379,6 @@ header{
 	 .wayimage{
 		padding-top: 1.6em;
 	}
-	
 	
 }
 /* @media screen and (min-width: 984px) */
@@ -392,7 +400,11 @@ header{
     font-size: 1.0625em;
 /*     background: lime; */
   	}
-  
+  	
+  	#top, #bottom, #left, #right { 
+  		display: block; 
+ 	 }
+    
 	.oneway, .twoway {
     	margin: 0 16.666666666666664%;
 	}
