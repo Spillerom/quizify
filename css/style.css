@@ -93,6 +93,49 @@ h1{
 }
 
 /*---------------*/
+/* STEP-BY-STEP NAV */
+/*--------------*/
+
+.nav-container{
+	width: 70%;
+	height: 2.5em;
+	margin: 0 0 3em 14.7%;
+}
+
+nav ul, li{
+	list-style: none;
+	outline: 0;
+  	font-size: 100%;
+  	background: transparent;
+}
+
+nav li:before{
+	content:"";
+	background: url("../images/circle.png") no-repeat top left;
+	background-size: 22px 22px;
+	width: 30px;
+	height: 30px;
+	display: block;
+	margin-top: -10px;
+}
+
+nav {
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+  border-top: 1px solid #fff; 
+}
+
+nav ul {
+  width: 123%;
+}
+
+nav ul li {
+  width: 20%; 
+  float: left;
+}
+
+/*---------------*/
 /* RADIO BUTTONS */
 /*--------------*/
 

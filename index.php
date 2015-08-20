@@ -67,11 +67,33 @@ require_once 'language/'.$language.'/questions.php';
 			</section>
 		</header>
 		
-		<nav class="oneway">
+		<section class="oneway">
 			<section class="wrapper">
-			    <div class="stepbystep-nav"></div>
+			    
+			    <div class="nav-container">
+					<nav>
+					  <ul>
+					    <li>
+					        <a href="#"></a>
+					    </li>
+					    <li>
+					        <a href="#"></a>
+					    </li>
+					    <li>
+					        <a href="#"></a>
+					    </li>
+					    <li>
+					        <a href="#"></a>
+					    </li>
+					    <li>
+					        <a href="#"></a>
+					    </li>
+					   </ul>
+					</nav>
+				</div>
+
 			</section>
-		</nav>
+		</section>
 						
     	<div id="questions" class="q-wrapper">
     	    <?php
@@ -86,29 +108,30 @@ require_once 'language/'.$language.'/questions.php';
 
 		        <article class="twoway">
 			        <section class="wrapper">
-				        <div class="alternatives">
+				        <ul class="alternatives">
 				            <?php
 				            $alternatives = $question['alternatives'];
                             for( $j=0; $j<count($alternatives); $j++ ) {
                                 $alternative = $alternatives[$j];
 				            ?>
-				            <div class="alternative">
+				            <li class="alternative">
                                 <input id="radio-<?php FlushValue($i + 1); ?>-<?php FlushValue($j + 1); ?>" type="radio" name="radio" value="1" checked="checked">
                                 <label for="radio-<?php FlushValue($i + 1); ?>-<?php FlushValue($j + 1); ?>">
                                     <span><span></span></span>
                                     <?php FlushValue($alternative['text']); ?>
                                 </label>
                                 <div class="metadata"><?php FlushValue($alternative['score']); ?></div>
-				            </div>		
+				            </li>		
 				            <?php
 				            }
 				            ?>
-						</div><!-- end alternatives -->
+						</ul>
+						
                     </section>
 
 			      	<section class="wrapper">
-					    <figure >    
-					        <img class="wayimage" src="images/952x636_poster_test.png" alt="Poster">
+					    <figure>    
+					        <img src="images/952x636_poster_test.png" alt="Poster">
 					    </figure>     
 				        </div>
 			        </section>
