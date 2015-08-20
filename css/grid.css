@@ -266,12 +266,6 @@ header{
 	margin: 3em 0;
 }
 
-.stepbystep-nav{
-	width: 90%;
-	height: 2.5em;
-	background: aqua;
-	margin: 0 0 3em 6%;
-}
 
 /* Don´t show page border */
 @media screen and (max-width: 40em) {
