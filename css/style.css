@@ -230,10 +230,49 @@ input[type=radio]:not(old):checked +  label > span > span{
 .question-container {
 		display: none;
 }
-    .alternatives .alternative {
-        cursor: pointer;
+    .alternatives {
+        float: left;
+        margin-bottom: 3em;
     }
-
+        .alternatives .alternative {
+            float: left;
+            width: 100%;
+            cursor: pointer;
+        }
+            .active-alernative {
+                background: url("../images/circle.png") !important;
+                background-size: 1.375em !important;
+                background-repeat: no-repeat !important;
+            }
+            .remove-alternative {
+                opacity: 0;
+                transition: opacity .25s ease-in-out;
+                -moz-transition: opacity .25s ease-in-out;
+                -webkit-transition: opacity .25s ease-in-out;
+            }
+            .alternatives .alternative:hover {
+            }
+            .alternatives .alternative:hover > .custom-radio {
+                background: url("../images/circle.png");
+                background-size: 1.375em;
+                background-repeat: no-repeat !important;
+                transition: opacity .25s ease-in-out;
+                -moz-transition: opacity .25s ease-in-out;
+                -webkit-transition: opacity .25s ease-in-out;
+            }
+            .alternative .custom-radio {
+                float: left;
+                background: none;
+                background-repeat: no-repeat;
+                background-size: 1.375em;
+                width: 2em;
+                height: 2em;
+                margin-right: .5em;
+            }
+            .alternative .text {
+                float: left;
+                width: 20em;
+            }
 
 #feedbacks { 
     position: fixed;

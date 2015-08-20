@@ -114,12 +114,9 @@ require_once 'language/'.$language.'/questions.php';
                             for( $j=0; $j<count($alternatives); $j++ ) {
                                 $alternative = $alternatives[$j];
 				            ?>
-				            <li class="alternative">
-                                <input id="radio-<?php FlushValue($i + 1); ?>-<?php FlushValue($j + 1); ?>" type="radio" name="radio" value="1" checked="checked">
-                                <label for="radio-<?php FlushValue($i + 1); ?>-<?php FlushValue($j + 1); ?>">
-                                    <span><span></span></span>
-                                    <?php FlushValue($alternative['text']); ?>
-                                </label>
+                            <li class="alternative">
+                                <div class="custom-radio"></div>
+                                <div class="text"><?php FlushValue($alternative['text']); ?></div>
                                 <div class="metadata"><?php FlushValue($alternative['score']); ?></div>
 				            </li>		
 				            <?php

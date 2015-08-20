@@ -222,6 +222,7 @@ p{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  float: left;
 }
 /*
 *
@@ -270,10 +271,6 @@ header{
 	height: 2.5em;
 	background: aqua;
 	margin: 0 0 3em 6%;
-}
-
-.alternatives{
-	margin-top: 4em;
 }
 
 /* Don´t show page border */

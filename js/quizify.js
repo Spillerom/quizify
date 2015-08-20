@@ -13,8 +13,15 @@ $( document ).ready(function() {
 
 
     // HANDLE ALTERNATIVE CLICKING:
-    $('.alternative input').click(function() {
-        var currentAlternative = $(this).parent().index();
+    $('.alternative').click(function() {
+        var currentAlternativeNode = $(this);
+        var currentAlternative = currentAlternativeNode.index();
+
+        currentAlternativeNode.parent().find(".alternative").addClass('remove-alternative');
+        currentAlternativeNode.removeClass('remove-alternative');
+//console.log(currentAlternativeNode);
+
+        currentAlternativeNode.find(".custom-radio").addClass("active-alernative");
 
         // HANDELING SCORE SUMERIZATION:
         var scoreMatrix = $(this).find('.metadata').text().split(',');
@@ -33,7 +40,7 @@ $( document ).ready(function() {
         currentFeedback = $('#feedback-' + currentQuestion + '-' + (currentAlternative + 1));     
         currentFeedback.show();
 
-        TweenMax.to(feedbacks, .3, {alpha:1, onComplete: nextQuestion});
+        TweenMax.to(feedbacks, .3, {alpha:1, delay:1.5, onComplete: nextQuestion});
 
         // 
         function nextQuestion() {
@@ -41,7 +48,7 @@ $( document ).ready(function() {
             currentQuestion++;
             questionNode().show();
 
-            TweenMax.to(feedbacks, .3, {alpha:0, delay:1.5, onComplete: function() {feedbacks.hide();}});
+            TweenMax.to(feedbacks, .3, {alpha:0, delay:3.5, onComplete: function() {feedbacks.hide();}});
         }
     });
 });
