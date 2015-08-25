@@ -40,122 +40,16 @@ require_once 'language/'.$language.'/questions.php';
 		<![endif]-->
 		
 	</head>
-	<body lang="no" ontouchstart="" onmouseover="">
-		<script>
-		  window.fbAsyncInit = function() {
-		          FB.init({
-		                        appId      : '1630666833841212',
-		                              xfbml      : true,
-		                                    version    : 'v2.3'
-		                                        });
-		
-		              // ADD ADDITIONAL FACEBOOK CODE HERE
-		            };
-		
-		  (function(d, s, id){
-		        var js, fjs = d.getElementsByTagName(s)[0];
-		             if (d.getElementById(id)) {return;}
-		                  js = d.createElement(s); js.id = id;
-		                       js.src = "//connect.facebook.net/en_US/sdk.js";
-		                            fjs.parentNode.insertBefore(js, fjs);
-		                               }(document, 'script', 'facebook-jssdk'));
-		</script>
+	<body class="start-end" lang="no">
+        <section id="intro-text" class="oneway">
+            <p>
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+    	</section>
 
-		<header>
-			<section class="logo">
-				<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
-			</section>
-		</header>
-		
-		<section class="oneway">
-			<section class="wrapper">
-			    
-			    <div class="nav-container">
-					<nav>
-					  <ul>
-					    <li>
-					        <a href="#"></a>
-					    </li>
-					    <li>
-					        <a href="#"></a>
-					    </li>
-					    <li>
-					        <a href="#"></a>
-					    </li>
-					    <li>
-					        <a href="#"></a>
-					    </li>
-					    <li>
-					        <a href="#"></a>
-					    </li>
-					   </ul>
-					</nav>
-				</div>
-
-			</section>
-		</section>
-						
-    	<div id="questions" class="q-wrapper">
-    	    <?php
-		    for( $i=0; $i<count($questions); $i++ ) {
-		        $question = $questions[$i];
-		    ?>
-		    <div id="question-<?php FlushValue($i + 1); ?>" class="question-container">
-    
-		        <article class="oneway wrapper">
-		        	<h1 class="question"><?php FlushValue($question['question']); ?></h1>
-                </article>
-
-		        <article class="twoway">
-			        <section class="wrapper">
-				        <ul class="alternatives">
-				            <?php
-				            $alternatives = $question['alternatives'];
-                            for( $j=0; $j<count($alternatives); $j++ ) {
-                                $alternative = $alternatives[$j];
-				            ?>
-                            <li class="alternative">
-                                <div class="custom-radio"></div>
-                                <div class="text"><?php FlushValue($alternative['text']); ?></div>
-                                <div class="metadata"><?php FlushValue($alternative['score']); ?></div>
-				            </li>		
-				            <?php
-				            }
-				            ?>
-						</ul>
-						
-                    </section>
-
-			      	<section class="wrapper">
-					    <figure>    
-					        <img src="images/952x636_poster_test.png" alt="Poster">
-					    </figure>     
-				        </div>
-			        </section>
-		        </article><!-- end twoway -->     
-		    <?php
-		    }
-		    ?>
-		    </div><!-- end question-container -->
-		    
-		</div> <!-- end q-wrapper --> 
-	
-		<div id="feedbacks" class="feedback-wrapper">
-            <div class="fullscreen-background"></div>
-		    <?php
-		    for( $i=0; $i<count($questions); $i++ ) {
-		        $question = $questions[$i];
-	            $alternatives = $question['alternatives'];
-			    for( $j=0; $j<count($alternatives); $j++ ) {
-	            	$alternative = $alternatives[$j];
-	            	$feedback = $alternative["feedback"];
-            ?>
-            <h3 id="feedback-<?php FlushValue($i + 1); ?>-<?php FlushValue($j + 1); ?>" class="feedback-container"><?php FlushValue($feedback); ?></h3>
-            <?php
-                }
-            }
-            ?>
-        </div>
+        <section id="start-button">
+            <a href="valgomat.php">Start</a>
+        </section>
 
 		<!-- Body border -->
 		<!--[if lte IE 6]>
@@ -165,8 +59,8 @@ require_once 'language/'.$language.'/questions.php';
 		<b id="right"></b>
 		<b id="top"></b>
 		<b id="bottom"></b>
-		
-		<!-- jQuery -->
+	
+	    <!-- jQuery -->
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 

@@ -60,7 +60,17 @@ body{
 	background: -ms-radial-gradient(center, ellipse cover,  #213a78 0%,#0a1327 100%); /* IE10+ */
 	background: radial-gradient(ellipse at center,  #213a78 0%,#0a1327 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#213a78', endColorstr='#0a1327',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
- }
+}
+
+
+
+body.start-end {
+    background-image: url(../images/1800x1125_startresult_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
 
 /*---------------*/
 /* BODY BORDER */

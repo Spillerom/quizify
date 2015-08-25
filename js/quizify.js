@@ -2,6 +2,7 @@ $( document ).ready(function() {
     var totalScoreMatrix = [0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 	var currentQuestion = 1;
+    var numQuestions = 1;
 
     // WRAPPER FOR GETTING CURRENT QUESTION NODE:
     function questionNode() {
@@ -12,6 +13,14 @@ $( document ).ready(function() {
 	questionNode().show();
 
 
+    // FACEBOOK SHARE:
+    $('.btnShare').click(function(){
+        elem = $(this);
+        postToFeed(elem.data('title'), elem.data('desc'), elem.prop('href'), elem.data('image'));
+        return false;
+    });
+
+
     // HANDLE ALTERNATIVE CLICKING:
     $('.alternative').click(function() {
         var currentAlternativeNode = $(this);
@@ -19,7 +28,6 @@ $( document ).ready(function() {
 
         currentAlternativeNode.parent().find(".alternative").addClass('remove-alternative');
         currentAlternativeNode.removeClass('remove-alternative');
-//console.log(currentAlternativeNode);
 
         currentAlternativeNode.find(".custom-radio").addClass("active-alernative");
 
@@ -44,11 +52,17 @@ $( document ).ready(function() {
 
         // 
         function nextQuestion() {
-            questionNode().hide();
-            currentQuestion++;
-            questionNode().show();
+            if( currentQuestion >= numQuestions ) {
+                window.location = 'result.php';
+            } else {
+                questionNode().hide();
 
-            TweenMax.to(feedbacks, .3, {alpha:0, delay:3.5, onComplete: function() {feedbacks.hide();}});
+                currentQuestion++;
+
+                questionNode().show();
+
+                TweenMax.to(feedbacks, .3, {alpha:0, delay:3.5, onComplete: function() {feedbacks.hide();}});
+            }
         }
     });
 });
