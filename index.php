@@ -41,15 +41,24 @@ require_once 'language/'.$language.'/questions.php';
 		
 	</head>
 	<body class="start-end" lang="no">
+ 		<header>
+			<section class="logo">
+				<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
+			</section>
+		</header>
+
         <section id="intro-text" class="oneway">
-            <p>
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+            <section class="wrapper">
+                <h1><?php LocalizedString("START-HEADING"); ?></h1>
+            </section>
+            <sectioni class="wrapper">
+                <p><?php LocalizedString('START-SHORTDESC'); ?></p>
+            </section>
     	</section>
 
-        <section id="start-button">
-            <a href="valgomat.php">Start</a>
-        </section>
+        <div id="start-button" class="button">
+            <a href="valgomat.php"><?php LocalizedString('START-BUTTON-TEXT'); ?></a>
+        </div>
 
 		<!-- Body border -->
 		<!--[if lte IE 6]>

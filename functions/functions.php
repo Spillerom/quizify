@@ -6,10 +6,16 @@ function FlushValue($value) {
 }
 
 // 
+function LocalizedString($string) {
+    global $localizedStrings;
+    echo $localizedStrings[$string];
+}
+
+// 
 function GetURLVar($var, $default) {
     // 
-    if( isset($GET[$var] )) {
-        return $GET[$var];
+    if( isset($_GET[$var] )) {
+        return $_GET[$var];
     } else {
         return $default;
     }

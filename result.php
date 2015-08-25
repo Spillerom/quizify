@@ -5,7 +5,7 @@ require_once "set_env.php";
 // 
 require_once "language/".$language."/results.php";
 $num_results = count($results);
-$result = $results[GetURLVar('SCORE', ($num_results-1))];
+$result = $results[GetURLVar('program', ($num_results-1))];
 
 ?><!DOCTYPE html>
 <html>
@@ -22,8 +22,22 @@ $result = $results[GetURLVar('SCORE', ($num_results-1))];
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/default.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
+    <link rel="stylesheet" href="css/grid.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <!-- <link rel="shortcut icon" href="favicon.ico" /> -->    
+    
+    <!-- Here's Golden Gridlet, the grid overlay script. -->
+    <script src="js/GGS.js"></script>
+            
+    <!-- 
+        This script enables structural HTML5 elements in old IE.
+        http://code.google.com/p/html5shim/
+    -->
+    <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
 <body class="start-end">
     <script>
       window.fbAsyncInit = function() {
@@ -46,19 +60,21 @@ $result = $results[GetURLVar('SCORE', ($num_results-1))];
     </script>
 
     <section id="intro-text" class="oneway">
-        <h2><?php FlushValue($result['headline']); ?></h2>
-        <div class="description"><?php FlushValue($result['description']); ?></div>
+        <section class="wrapper">
+            <h1><?php FlushValue($result['headline']); ?></h1>
+        </section>
+        <section class="wrapper">
+            <p><?php FlushValue($result['description']); ?></p>
+        </section>
     </section>
 
-    <section id="start-button">
-<!--
-        <a href="valgomat.php">Del på Facebook</a>
-        <div class="fb-share-button" data-href="http://www.your-domain.com/your-page.html" data-layout="button_count">
--->
-        <a href="someurl.com/some-article" data-image="article-1.jpg" data-title="Article Title" data-desc="Some description for this article" class="btnShare">Share</a>
+    <div id="share-button" class="button">
+        <a href="someurl.com/some-article" 
+            data-image="article-1.jpg" 
+            data-title="Article Title" 
+            data-desc="Some description for this article" 
+            class="btnShare button">Share</a>
     </div>
-
-    </section>
 
     <!-- Body border -->
     <!--[if lte IE 6]>

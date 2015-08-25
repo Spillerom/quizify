@@ -1,8 +1,9 @@
 $( document ).ready(function() {
+    // 
     var totalScoreMatrix = [0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 	var currentQuestion = 1;
-    var numQuestions = 1;
+    var numQuestions = 5;
 
     // WRAPPER FOR GETTING CURRENT QUESTION NODE:
     function questionNode() {
@@ -53,7 +54,17 @@ $( document ).ready(function() {
         // 
         function nextQuestion() {
             if( currentQuestion >= numQuestions ) {
-                window.location = 'result.php';
+                // CALCULATE RECOMENDED PROGRAM:
+                var score = 0;
+                var program = 0;
+                for( i=0; i<totalScoreMatrix.length; i++ ) {
+                    if( score > totalScoreMatrix[i] ) {
+                        program = i;
+                    }
+                }
+
+                // 
+                window.location = 'result.php?program=' + program;
             } else {
                 questionNode().hide();
 

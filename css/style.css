@@ -79,21 +79,41 @@ body.start-end {
 #top, #bottom, #left, #right {
 	background: #223d7b;
 	position: fixed;
-	}
+    transition: 1s;
+}
 	#left, #right {
 		top: 0; bottom: 0;
 		width: 10px;
-		}
+	}
 		#left { left: 0; }
 		#right { right: 0; }
 		
 	#top, #bottom {
 		left: 0; right: 0;
 		height: 10px;
-		}
+	}
 		#top { top: 0; }
 		#bottom { bottom: 0; }
 
+
+/* DIFFERENT BORDER COLORS FOR DIFFERENT SCREENS */
+
+#top, #bottom, #left, #right {
+	background: #223d7b;
+}
+
+#top, #bottom, #left, #right {
+	background: #223d7b;
+}
+
+#top, #bottom, #left, #right {
+	background: #223d7b;
+}
+
+
+#top, #bottom, #left, #right {
+	background: #223d7b;
+}
 
 /*---------------*/
 /* TYPOGRAPHY   */
@@ -101,6 +121,33 @@ body.start-end {
 h1{
 	font-family: 'tvnorgebold', 'Helvetica Neue', Arial, sans-serif;
 	font-style: normal;
+}
+
+#intro-text h1 {
+    text-align: center;
+    width: 100%;
+}
+
+#intro-text p {
+    margin-bottom: 3em;
+    text-align: center;
+    font-size: 1.8em;
+    line-height: 1.5em;
+}
+
+#start-button a, #share-button a {
+    float: left;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #d43128;
+    border-radius: 0.25em;
+    padding: 1em;
+    margin-left: 33%;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 /*---------------*/
