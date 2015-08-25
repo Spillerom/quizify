@@ -266,6 +266,11 @@ header{
 	margin: 3em 0;
 }
 
+.nav-container{
+	width: 70%;
+	height: 1em;
+	margin: 0 0 0 14.7%;
+}
 
 /* Don´t show page border */
 @media screen and (max-width: 40em) {
@@ -315,7 +320,6 @@ header{
     margin: 1.1428571428571428em 0 1.571429em;
   }
  
-
 }
 /*
 *
@@ -334,11 +338,16 @@ header{
     font-size: 1em;
 /*     background-color: yellow; */
   }
-  
-  #top, #bottom, #left, #right { 
-  		display: none; 
-  }
-
+    
+  .alternatives .alternative{
+  		font-size: 1.2em;
+    	padding: 1.5em 0 0.7em 0;
+    	border-bottom: 1px dotted red;
+  		}
+  		
+  .alternatives .alternative:last-child{
+  		border-bottom: none;
+  		}		
 }
 
 /* iPads */
@@ -355,8 +364,6 @@ header{
 /*     background-color: teal; */
   }
   
-  
-  
   h1{
   	margin-bottom: 1.5em;
   	width: 16em;
@@ -366,6 +373,7 @@ header{
 	    float: left;
 	    width: 50%;
 	  }
+	  
 }
 /* @media screen and (min-width: 984px) */
 @media screen and (min-width: 61.5em) {
@@ -375,7 +383,6 @@ header{
     font-size: 1em;
 /*     background: maroon; */
   }
-
    
 }
 /* @media screen and (min-width: 1200px) */

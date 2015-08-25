@@ -97,12 +97,6 @@ h1{
 /* STEP-BY-STEP NAV */
 /*--------------*/
 
-.nav-container{
-	width: 70%;
-	height: 2.5em;
-	margin: 0 0 3em 14.7%;
-}
-
 nav ul, li{
 	list-style: none;
 	outline: 0;
@@ -251,14 +245,16 @@ input[type=radio]:not(old):checked +  label > span > span{
                 -webkit-transition: opacity .25s ease-in-out;
             }
             .alternatives .alternative:hover {
+            	 color: #d21f26;
             }
             .alternatives .alternative:hover > .custom-radio {
                 background: url("../images/circle.png");
-                background-size: 1.375em;
+                background-size: 22px;
                 background-repeat: no-repeat !important;
                 transition: opacity .25s ease-in-out;
                 -moz-transition: opacity .25s ease-in-out;
                 -webkit-transition: opacity .25s ease-in-out;
+               
             }
             .alternative .custom-radio {
                 float: left;
@@ -272,6 +268,7 @@ input[type=radio]:not(old):checked +  label > span > span{
             .alternative .text {
                 float: left;
                 width: 20em;
+            
             }
 
 #feedbacks { 
