@@ -100,6 +100,46 @@ $questions = [
         ]
     ],
     [
+        'question' => 'Hvordan ser vi på TV om 10 år?',
+        'alternatives' => [
+            [
+                'text' => 'NRK planter kringkastingsmicrochips i nyfødte barn gjennom vaksineprogrammet, finansiert av økt lisensavgift',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+            	'feedback' => '#KonspirasjonNRK #TheTruthIsOutThere'
+            ],
+            [
+                'text' => 'Google glasses som streamer Monster-HD med 17G',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+            	'feedback' => 'Pornobransjen må bare bli enig om standard format først'
+            ],
+            [
+                'text' => 'Cirka sånn som vi ser på TV i dag',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+            	'feedback' => 'Det høres koseligst ut'
+            ]
+        ]
+    ],
+    [
+        'question' => 'Hvilket utsagn beskriver deg best?',
+        'alternatives' => [
+            [
+                'text' => 'Det er altfor lite reklame på TV nå om da`n',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+            	'feedback' => 'Saklig. Det har du aldri sagt'
+            ],
+            [
+                'text' => 'TVNorge er klart best på humor',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+            	'feedback' => 'Motta 1 000 000 poeng'
+            ],
+            [
+                'text' => 'Jeg ser nesten ikke på TV lenger, jeg. Det er så mye bra på Netflix og Popcorn Time',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+            	'feedback' => 'Blah blah blah, vi hører ikke hva du sier'
+            ]
+        ]
+    ],
+    [
         'question' => 'Jeg synes TVNorge er best på ...',
         'alternatives' => [
             [

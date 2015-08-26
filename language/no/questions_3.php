@@ -20,6 +20,85 @@
 
 $questions = [
     [
+        'question' => 'Hvor gammel er du?',
+        'alternatives' => [
+            [
+                'text' => 'Jeg husker Casino med Halvard Flatland',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' = 'Du har vel ikke glemt tause Birgitte?'
+            ],
+            [
+                'text' => 'Jeg husker Heia Tufte med Erik Thorstvedt',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' = 'Erik er hele Norges DILF'
+            ],
+            [
+                'text' => 'Jeg prøver å glemme Killer Karaoke',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' = 'Salgsavdelingen vår prøver også å glemme'
+            ]
+        ]
+    ],
+    [
+        'question' => 'Hvilken av disse historiene tror du er fleip?',
+        'alternatives' => [
+            [
+                'text' => 'Petter Schjerven har tapt i håndbak mot Pia Lykke',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' = 'Fakta. Det skjedde på en firmafest'
+            ],
+            [
+                'text' => 'Thomas Giertsen brakk armen i håndbak mot en anonym dame',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' = 'Fakta. Det skjedde under et sceneshow'
+            ],
+            [
+                'text' => 'Ine Jansen er kretsmester i håndbak',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' = 'Fleip, men hun kunne helt sikkert spilt en kretsmester'
+            ]
+        ]
+    ],
+    [
+        'question' => 'Du har blitt arrestert og får lov til å ta én telefon. Hvem av disse ringer du til?',
+        'alternatives' => [
+            [
+                'text' => 'Esben «Dansken» Selvig - Noe sier meg at han kjenner noen som kjenner noen',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' = 'Ingen dansker har vel rent mel i posen?'
+            ],
+            [
+                'text' => 'Odd Magnus «Odda» Williamson - Han kjenner ihvertfall noen',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' = 'Snitches get stiches'
+            ],
+            [
+                'text' => 'Bård Ylvisåker - Får jeg virkelig nummeret til Bård?',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' = 'Sorry, Bård har megahemmelig NASA-kryptert telefonnummer'
+            ]
+        ]
+    ],
+   	[
+		'question' => 'Hvilken suvenir fra TVNorge-universet vil du helst hatt kloa i?',
+		'alternatives' => [
+		    [
+		        'text' => 'Lusekofta til Asbjørn Brekke',
+		        'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+		        'feedback' = 'Kanskje du ombestemmer deg når du ser rødvinsflekkene'
+		    ],
+		    [
+		        'text' => 'En lokk av Magnus Devolds hår',
+		        'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+		        'feedback' = 'Vi kan klippe av en liten lengde til deg når Magnus sover'
+		    ],
+		    [
+		        'text' => 'Garderoben til Christine Koht',
+		        'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+		        'feedback' = 'xs'
+        ]
+    ],
+    [
         'question' => 'Hvilke ville du gjort hvis du var TVNorge-sjef en dag?',
         'alternatives' => [
             [
@@ -60,62 +139,22 @@ $questions = [
         ]
     ],
     [
-        'question' => 'Hvilken av de følgende kombinasjoner foretrekker du en kveld foran TV-skjermen?',
+        'question' => 'Jeg synes TVNorge er best på ...',
         'alternatives' => [
             [
-                'text' => 'Rødvin og muggost som er vrien på både uttale og smak',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Hva med en flaske Alary La Font d´Estévenas og en Bleu de Gex, din snobb'
+                'text' => 'Reality',
+                'score' => '1.0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Sorry. Det blir ikke noe mer av Den siste viking'
             ],
             [
-                'text' => 'Ostepop og barnevakt',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Eller en annen type snacks som våre annonsører reklamerer for (produktplasseringsP)'
+                'text' => 'Humor',
+                'score' => '0,1.0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Hvordan vet du at en bil er fra Jamaica? På REGGAEstreringsskiltet!'
             ],
             [
-                'text' => 'Snapchat og multitasking',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Psst! Sjekk tvnorgesnap'
-            ]
-        ]
-    ],
-    [
-        'question' => 'Hva hadde du sagt hvis Tom Stiansen kom inn i rommet nå?',
-        'alternatives' => [
-            [
-                'text' => 'Nja, hvorfor ikke?',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Tom vet å by på seg selv. Du skulle vært med på julebordet i fjor'
-            ],
-            [
-                'text' => 'Kan jeg by på litt rødvin og muggost som er vrien på både uttale og smak?',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Tom er nok litt mer på primus og pinnebrød-kjøret, men hvem vet?'
-            ],
-            [
-                'text' => 'Hvem slapp inn Stalker-Stiansen?!? ALARM! ALARM!',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Hvis du bare åpner vinduet så flyr han ut av seg selv'
-            ]
-        ]
-    ],
-    [
-        'question' => 'Ylvis er tilbake på skjermen i høst. Hva tenker du om det?',
-        'alternatives' => [
-            [
-                'text' => 'OMG! (emoji emoji emoji) jeg er admin på Kløftas største Ylvis-fansie på Instagram. Er bilettene til liveshowet lagt ut? (emoji)',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Keep calm and sjekk ut billettservice.no'
-            ],
-            [
-                'text' => 'Næh, de var bedre før da de var indie i Bergen',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => '90-tallet ringte. De vil gjerne ha grungejakka og tonefallet sitt tilbake'
-            ],
-            [
-                'text' => 'Hva er en Ylvis og hva er en OMG?',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Det er mye fint fjernsynsteater på NRK 2'
+                'text' => 'Underholdning',
+                'score' => '0,0,1.0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Det var hyggelig av deg å svare'
             ]
         ]
     ]

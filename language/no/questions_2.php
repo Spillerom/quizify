@@ -60,46 +60,6 @@ $questions = [
         ]
     ],
     [
-        'question' => 'Hvilket utsagn beskriver deg best?',
-        'alternatives' => [
-            [
-                'text' => 'Det er altfor lite reklame på TV nå om da`n',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Saklig. Det har du aldri sagt'
-            ],
-            [
-                'text' => 'TVNorge er klart best på humor',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Motta 1 000 000 poeng'
-            ],
-            [
-                'text' => 'Jeg ser nesten ikke på TV lenger, jeg. Det er så mye bra på Netflix og Popcorn Time',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Blah blah blah, vi hører ikke hva du sier'
-            ]
-        ]
-    ],
-    [
-        'question' => 'Hvordan ser vi på TV om 10 år?',
-        'alternatives' => [
-            [
-                'text' => 'NRK planter kringkastingsmicrochips i nyfødte barn gjennom vaksineprogrammet, finansiert av økt lisensavgift',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-            	'feedback' => '#KonspirasjonNRK #TheTruthIsOutThere'
-            ],
-            [
-                'text' => 'Google glasses som streamer Monster-HD med 17G',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Pornobransjen må bare bli enig om standard format først'
-            ],
-            [
-                'text' => 'Cirka sånn som vi ser på TV i dag',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Det høres koseligst ut'
-            ]
-        ]
-    ],
-    [
         'question' => 'Hva hadde du savnet mest på en øde øy?',
         'alternatives' => [
             [
@@ -116,6 +76,86 @@ $questions = [
                 'text' => 'Lokkene til Vegard Ylvisåker',
                 'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
             	'feedback' => 'Han lukter godt også FYI'
+            ]
+        ]
+    ],
+    [
+        'question' => 'Hvilken av de følgende kombinasjoner foretrekker du en kveld foran TV-skjermen?',
+        'alternatives' => [
+            [
+                'text' => 'Rødvin og muggost som er vrien på både uttale og smak',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Hva med en flaske Alary La Font d´Estévenas og en Bleu de Gex, din snobb'
+            ],
+            [
+                'text' => 'Ostepop og barnevakt',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Eller en annen type snacks som våre annonsører reklamerer for (produktplasseringsP)'
+            ],
+            [
+                'text' => 'Snapchat og multitasking',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Psst! Sjekk tvnorgesnap'
+            ]
+        ]
+    ],
+    [
+        'question' => 'Hva hadde du sagt hvis Tom Stiansen kom inn i rommet nå?',
+        'alternatives' => [
+            [
+                'text' => 'Nja, hvorfor ikke?',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Tom vet å by på seg selv. Du skulle vært med på julebordet i fjor'
+            ],
+            [
+                'text' => 'Kan jeg by på litt rødvin og muggost som er vrien på både uttale og smak?',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Tom er nok litt mer på primus og pinnebrød-kjøret, men hvem vet?'
+            ],
+            [
+                'text' => 'Hvem slapp inn Stalker-Stiansen?!? ALARM! ALARM!',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Hvis du bare åpner vinduet så flyr han ut av seg selv'
+            ]
+        ]
+    ],
+    [
+        'question' => 'Ylvis er tilbake på skjermen i høst. Hva tenker du om det?',
+        'alternatives' => [
+            [
+                'text' => 'OMG! (emoji emoji emoji) jeg er admin på Kløftas største Ylvis-fansie på Instagram. Er bilettene til liveshowet lagt ut? (emoji)',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Keep calm and sjekk ut billettservice.no'
+            ],
+            [
+                'text' => 'Næh, de var bedre før da de var indie i Bergen',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => '90-tallet ringte. De vil gjerne ha grungejakka og tonefallet sitt tilbake'
+            ],
+            [
+                'text' => 'Hva er en Ylvis og hva er en OMG?',
+                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Det er mye fint fjernsynsteater på NRK 2'
+            ]
+        ]
+    ],
+    [
+        'question' => 'Jeg synes TVNorge er best på ...',
+        'alternatives' => [
+            [
+                'text' => 'Reality',
+                'score' => '1.0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Sorry. Det blir ikke noe mer av Den siste viking'
+            ],
+            [
+                'text' => 'Humor',
+                'score' => '0,1.0,0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Hvordan vet du at en bil er fra Jamaica? På REGGAEstreringsskiltet!'
+            ],
+            [
+                'text' => 'Underholdning',
+                'score' => '0,0,1.0,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Det var hyggelig av deg å svare'
             ]
         ]
     ]
