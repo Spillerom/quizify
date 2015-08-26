@@ -5,6 +5,10 @@ $( document ).ready(function() {
 	var currentQuestion = 1;
     var numQuestions = 5;
 
+    var questionAnswerDelay = 0.1
+    var questionFeedbackDelay = 0.1
+
+
     // WRAPPER FOR GETTING CURRENT QUESTION NODE:
     function questionNode() {
 	    return $('#question-' + currentQuestion);
@@ -37,7 +41,8 @@ $( document ).ready(function() {
 
         // 
         for( i=0; i<scoreMatrix.length; i++ ) {
-            totalScoreMatrix[i] += scoreMatrix[i];
+            var score = parseFloat(totalScoreMatrix[i])
+            totalScoreMatrix[i] = score + parseFloat(scoreMatrix[i]);
         }
 
         //
@@ -49,16 +54,18 @@ $( document ).ready(function() {
         currentFeedback = $('#feedback-' + currentQuestion + '-' + (currentAlternative + 1));     
         currentFeedback.show();
 
-        TweenMax.to(feedbacks, .3, {alpha:1, delay:1.5, onComplete: nextQuestion});
+        TweenMax.to(feedbacks, .3, {alpha:1, delay:questionAnswerDelay, onComplete: nextQuestion});
 
         // 
         function nextQuestion() {
-            if( currentQuestion >= numQuestions ) {
+            // 
+            if( currentQuestion >= numQuestions ) {          
                 // CALCULATE RECOMENDED PROGRAM:
                 var score = 0;
                 var program = 0;
                 for( i=0; i<totalScoreMatrix.length; i++ ) {
-                    if( score > totalScoreMatrix[i] ) {
+                    if( totalScoreMatrix[i]>=score ) {
+                        score = totalScoreMatrix[i]
                         program = i;
                     }
                 }
@@ -72,7 +79,7 @@ $( document ).ready(function() {
 
                 questionNode().show();
 
-                TweenMax.to(feedbacks, .3, {alpha:0, delay:3.5, onComplete: function() {feedbacks.hide();}});
+                TweenMax.to(feedbacks, .3, {alpha:0, delay:questionFeedbackDelay, onComplete: function() {feedbacks.hide();}});
             }
         }
     });

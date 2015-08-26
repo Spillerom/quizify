@@ -1,4 +1,23 @@
 <?php
+/*
+
+1:BRILLE
+2:KJENDISKVELD MED MAGNUS DEVOLD
+3:I KVELD MED YLVIS LIVE
+4:ADAM SØKER EVA
+5:EN HELT VANLIG DAG
+6:ALT FOR NORGE
+7:DANSKEN OG FINGEREN: BEST I ALT
+8:ÅNDENES MAKT
+9:MONTEBELLO CAMPING
+10:GIFT VED FØRSTE BLIKK
+11:SINNASNEKKER'N
+12:71 GRADER NORD
+13:PÅSKEEGG: DPLAY
+14:FEILMELDING
+
+*/
+
 $questions = [
    [
         'question' => 'Å lage TV av at noen dater nakne på en øde stillehavsøy er ...',
@@ -95,7 +114,7 @@ $questions = [
             ],
             [
                 'text' => 'Underholdning',
-                'score' => '0,1.0,0,0,0,0,0,0,0,0,0,0,0',
+                'score' => '0,0,1.0,0,0,0,0,0,0,0,0,0,0',
                 'feedback' => 'Det var hyggelig av deg å svare'
             ]
         ]
