@@ -28,6 +28,7 @@ $( document ).ready(function() {
 
     // HANDLE ALTERNATIVE CLICKING:
     $('.alternative').click(function() {
+        // 
         var currentAlternativeNode = $(this);
         var currentAlternative = currentAlternativeNode.index();
 

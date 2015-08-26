@@ -1,13 +1,7 @@
 <?php
 // 
 require_once 'set_env.php';
-
-// 
-$questionFile = 1;
-require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
-?>
-
-<!doctype html>
+?><!doctype html
 <!--[if lt IE 9]><html class="ie"><![endif]-->
 <!--[if gte IE 9]><!--><html><!--<![endif]-->
 
