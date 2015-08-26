@@ -3,7 +3,8 @@
 require_once 'set_env.php';
 
 // 
-require_once 'language/'.$language.'/questions.php';
+$questionFile = 1;
+require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
 ?>
 
 <!doctype html>
