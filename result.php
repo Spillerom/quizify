@@ -17,18 +17,14 @@ $result = $results[GetURLVar('program', ($num_results-1))];
     <meta property="og:title"         content="Your Website Title" />
     <meta property="og:description"   content="Your description" />
     <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
-</head>
-<body>
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/default.js"></script>
+    
     <link rel="stylesheet" href="css/grid.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    
+         
     <!-- <link rel="shortcut icon" href="favicon.ico" /> -->    
     
     <!-- Here's Golden Gridlet, the grid overlay script. -->
-    <script src="js/GGS.js"></script>
+   <!--  <script src="js/GGS.js"></script> -->
             
     <!-- 
         This script enables structural HTML5 elements in old IE.
@@ -37,9 +33,12 @@ $result = $results[GetURLVar('program', ($num_results-1))];
     <!--[if lt IE 9]>
         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
+    
 </head>
+
 <body class="start-end">
-    <script>
+ <script>
       window.fbAsyncInit = function() {
               FB.init({
                             appId      : '1630666833841212',
@@ -58,24 +57,52 @@ $result = $results[GetURLVar('program', ($num_results-1))];
                                 fjs.parentNode.insertBefore(js, fjs);
                                    }(document, 'script', 'facebook-jssdk'));
     </script>
+      
+    <header class="logo">
+		<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
+	</header>
 
-    <section id="intro-text" class="oneway">
+    <section class="oneway">
         <section class="wrapper">
-            <h1><?php FlushValue($result['headline']); ?></h1>
+            <h1 class="introandresult massive"><?php FlushValue($result['headline']); ?></h1>
         </section>
+        
         <section class="wrapper">
-            <p><?php FlushValue($result['description']); ?></p>
+            <p class="message"><?php FlushValue($result['description']); ?></p>
         </section>
-    </section>
+        
+        <section class="twoway">
+	        <section class="wrapper">
+	       	<h3 class="tease">
+	        	Bli med i trekningen
+				av signert Ylvis premie:
+			</h3>
+		        <div id="share-button" class="btn">
+		        	<a href="someurl.com/some-article" 
+		            data-image="article-1.jpg" 
+		            data-title="Article Title" 
+		            data-desc="Some description for this article" 
+		            class="btnShare button">Del med venner</a>
+		    	</div>
+	    	</section>
+	    	
+	    	 <section class="wrapper">
+		         <h3 class="tease">
+	        		Misfornøyd?
+				</h3>
+		        <div id="backtostart-button" class="btn">
+		        	<a href="someurl.com/some-article" 
+		            data-image="article-1.jpg" 
+		            data-title="Article Title" 
+		            data-desc="Some description for this article" 
+		            class="btnShare button">Én gang til!</a>
+		    	</div>
+	    	</section>
 
-    <div id="share-button" class="button">
-        <a href="someurl.com/some-article" 
-            data-image="article-1.jpg" 
-            data-title="Article Title" 
-            data-desc="Some description for this article" 
-            class="btnShare button">Share</a>
-    </div>
-
+    	</section>
+    
+    </section> 
+   
     <!-- Body border -->
     <!--[if lte IE 6]>
         <style>#top, #bottom, #left, #right { display: none; }</style>
@@ -84,5 +111,13 @@ $result = $results[GetURLVar('program', ($num_results-1))];
     <b id="right"></b>
     <b id="top"></b>
     <b id="bottom"></b>
+    
+     <!-- jQuery -->
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<!-- load Greensock TweenMax -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.2/TweenMax.min.js"></script>
+
 </body>
 </html> 
