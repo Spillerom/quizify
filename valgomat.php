@@ -99,7 +99,7 @@ require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
                  </section>
     		     <section class="wrapper">
 					    <figure>    
-                        <img src="images/<?php FlushValue($posterImages[$i]); ?>" alt="Poster">
+                        <img src="<?php FlushValue($rootURL.$posterImages[$i]); ?>" alt="Poster">
 					    </figure>     
 				        </div>
 			        </section>

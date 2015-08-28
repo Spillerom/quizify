@@ -16,7 +16,7 @@ $result = $results[GetURLVar('program', ($num_results-1))];
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="<?php LocalizedString('SHARE_TITLE'); ?>" />
     <meta property="og:description"   content="<?php LocalizedString('SHARE_DESCRIPTION'); ?>" />
-    <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
+    <meta property="og:image"         content="<?php FlushValue($rootURL.$facebookShareImage) ?>" />
     
     <link rel="stylesheet" href="css/grid.css"/>
     <link rel="stylesheet" href="css/style.css"/>

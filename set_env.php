@@ -14,15 +14,23 @@ $rootURL = 'http://web.tvnorge.no/valgomat';
 
 // 
 $posterImages = array(
-    '952x636_poster_baard.png',
-    '952x636_poster_harald.png',
-    '952x636_poster_magnus.png',
-    '952x636_poster_odda.png',
-    '952x636_poster_thodesen.png',
-    '952x636_poster_baard.png',
-    '952x636_poster_harald.png'
+    '/images/952x636_poster_baard.png',
+    '/images/952x636_poster_harald.png',
+    '/images/952x636_poster_magnus.png',
+    '/images/952x636_poster_odda.png',
+    '/images/952x636_poster_thodesen.png',
+    '/images/952x636_poster_baard.png',
+    '/images/952x636_poster_harald.png'
 );
 
-
+// 
+$facebookShareImages = array(
+    '/images/facebook_share/1200x630_baard.jpg',
+    '/images/facebook_share/1200x630_harald.jpg',
+    '/images/facebook_share/1200x630_magnus.jpg',
+    '/images/facebook_share/1200x630_odda.jpg',
+    '/images/facebook_share/1200x630_thodesen.jpg'
+);
+$facebookShareImage = $facebookShareImages[rand(0,4)];
 
 ?>
