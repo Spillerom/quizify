@@ -24,18 +24,18 @@ $questions = array(
         'alternatives' => array(
             array(
                 'text' => 'Jeg husker Casino med Halvard Flatland',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' = 'Du har vel ikke glemt tause Birgitte?'
+                'score' => '0,0,0,0,0,0,0,0,0,10,5,10,0',
+                'feedback' => 'Du har vel ikke glemt tause Birgitte?'
             ),
             array(
                 'text' => 'Jeg husker Heia Tufte med Erik Thorstvedt',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' = 'Erik er hele Norges DILF'
+                'score' => '0,0,0,0,0,5,0,0,0,0,5,0,0',
+                'feedback' => 'Erik er hele Norges DILF'
             ),
             array(
                 'text' => 'Jeg prøver å glemme Killer Karaoke',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' = 'Salgsavdelingen vår prøver også å glemme'
+                'score' => '5,5,0,0,5,0,0,0,0,0,0,0,0',
+                'feedback' => 'Salgsavdelingen vår prøver også å glemme'
             )
         )
     ),
@@ -44,18 +44,18 @@ $questions = array(
         'alternatives' => array(
             array(
                 'text' => 'Petter Schjerven har tapt i håndbak mot Pia Lykke',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' = 'Fakta. Det skjedde på en firmafest'
+                'score' => '0,0,0,5,0,0,0,0,0,5,0,0,0',
+                'feedback' => 'Fakta. Det skjedde på en firmafest'
             ),
             array(
                 'text' => 'Thomas Giertsen brakk armen i håndbak mot en anonym dame',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' = 'Fakta. Det skjedde under et sceneshow'
+                'score' => '0,0,5,0,0,0,5,0,0,0,0,0,0',
+                'feedback' => 'Fakta. Det skjedde under et sceneshow'
             ),
             array(
                 'text' => 'Ine Jansen er kretsmester i håndbak',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' = 'Fleip, men hun kunne helt sikkert spilt en kretsmester'
+                'score' => '0,5,0,0,0,5,0,0,5,0,0,0,0',
+                'feedback' => 'Fleip, men hun kunne helt sikkert spilt en kretsmester'
             )
         )
     ),
@@ -64,18 +64,18 @@ $questions = array(
         'alternatives' => array(
             array(
                 'text' => 'Esben «Dansken» Selvig - Noe sier meg at han kjenner noen som kjenner noen',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' = 'Ingen dansker har vel rent mel i posen?'
+                'score' => '0,0,0,0,0,0,25,0,0,0,0,0,0',
+                'feedback' => 'Ingen dansker har vel rent mel i posen?'
             ),
             array(
                 'text' => 'Odd Magnus «Odda» Williamson - Han kjenner ihvertfall noen',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' = 'Snitches get stiches'
+                'score' => '0,0,0,0,10,0,0,0,0,0,0,0,0',
+                'feedback' => 'Snitches get stiches'
             ),
             array(
                 'text' => 'Bård Ylvisåker - Får jeg virkelig nummeret til Bård?',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' = 'Sorry, Bård har megahemmelig NASA-kryptert telefonnummer'
+                'score' => '0,0,50,0,0,0,0,0,0,0,0,0,0',
+                'feedback' => 'Sorry, Bård har megahemmelig NASA-kryptert telefonnummer'
             )
         )
     ),
@@ -84,36 +84,37 @@ $questions = array(
 		'alternatives' => array(
 		    array(
 		        'text' => 'Lusekofta til Asbjørn Brekke',
-		        'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-		        'feedback' = 'Kanskje du ombestemmer deg når du ser rødvinsflekkene'
+		        'score' => '0,0,5,0,0,0,0,0,0,0,0,5,0',
+		        'feedback' => 'Kanskje du ombestemmer deg når du ser rødvinsflekkene'
 		    ),
 		    array(
 		        'text' => 'En lokk av Magnus Devolds hår',
-		        'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-		        'feedback' = 'Vi kan klippe av en liten lengde til deg når Magnus sover'
+		        'score' => '5,10,0,0,0,0,0,0,0,0,0,0,0',
+		        'feedback' => 'Vi kan klippe av en liten lengde til deg når Magnus sover'
 		    ),
 		    array(
 		        'text' => 'Garderoben til Christine Koht',
-		        'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
-		        'feedback' = 'xs'
-        )
-    ),
+		        'score' => '0,0,0,5,0,0,0,0,5,5,0,0,0',
+		        'feedback' => 'xs'
+        	)
+	    ),
+	),
     array(
-        'question' => 'Hvilke ville du gjort hvis du var TVNorge-sjef en dag?',
+        'question' => 'Hva ville du gjort hvis du var TVNorge-sjef en dag?',
         'alternatives' => array(
             array(
                 'text' => 'Sendt Harald Eia til frisøren',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'score' => '10,0,0,0,5,0,0,0,0,0,0,0,0',
                 'feedback' => 'Lykke til'
             ),
             array(
                 'text' => 'Sneket deg med på innspilling av Åndenes makt for å se om spøkelsene er ekte',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'score' => '0,0,0,0,0,0,0,50,0,0,0,0,0',
                 'feedback' => 'Tom Strømness lover å ikke skremme deg med lommelykt under haka'
             ),
             array(
                 'text' => 'Gitt Magnus Devold en ordentilig TV-jobb',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'score' => '0,25,10,0,0,0,0,0,0,0,0,0,0',
                 'feedback' => 'Voilà. Ditt ord er lov. Kjendiskveld med Magnus Devold har premiere til høsten'
             )
         )
@@ -123,17 +124,17 @@ $questions = array(
         'alternatives' => array(
             array(
                 'text' => 'At altfor få fremmede gifter seg på TV uten å møtes på forhånd',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'score' => '0,0,0,0,0,0,0,0,0,25,0,0,0',
                 'feedback' => 'Paradise Hotel burde ta ansvar og arrangere flere bryllup, spør du oss'
 			),
             array(
                 'text' => 'At du ikke vet hva Knut Nærum gjør en helt vanlig dag',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'score' => '0,0,0,0,25,0,0,0,0,0,0,0,0',
                 'feedback' => 'Knut leser sikkert tegneserier på senga hele dagen'
             ),
             array(
                 'text' => 'At håndverkere på TV er generelt for blide',
-                'score' => '0,0,0,0,0,0,0,0,0,0,0,0,0',
+                'score' => '0,0,0,0,0,0,0,0,0,0,25,0,0',
                 'feedback' => 'Vi har nummeret til noen mugne rørleggere hvis du trenger'
             )
         )
