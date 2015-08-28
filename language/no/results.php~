@@ -21,10 +21,6 @@ $results = [
     ['headline' => 'Ditt favorittprogram denne høsten er En helt vanlig dag',
     'description' => 'Hvor morsomt kan det egentlig bli når norske komikere gjør relativt hverdagslige ting? Det skal Odd-Magnus Williamson og Henrik Thodesen finne ut av i TVNorges nye humorsatsing. Med seg har de fått Linn Skåber, Else Kåss Furuseth, Espen Eckbo, Are Kalvø, Anne-Kat. Hærland, Knut Nærum blant andre.'],
 
-    // TYPISK DEG MED PETTER SCHJERVEN:
-    ['headline' => 'Ditt favorittprogram denne høsten er Typisk deg med Petter Schjerven',
-    'description' => 'En nysgjerrig og leken Petter Schjerven gir oss nok et dypdykk i menneskesinnet og prøver å finne ut hvorfor vi er som vi er og gjør som vi gjør. Denne gangen sendes blant andre Eyvind Hellstrøm, Sandra Lyng Haugen og Abid Raja gjennom et oppgradert og enda mer skremmende psykokammer.'],
-
     // ALT FOR NORGE:
     ['headline' => 'Ditt favorittprogram denne høsten er Alt for Norge',
     'description' => 'Dobbel Gullrute-vinner Alt for Norge er tilbake med tolv eventyrlystne norsk-amerikanere. I den sjette sesongen av realityprogrammet rekonstruerer de tungtvannsaksjonen og går på trynet i hoppbakken.'],
