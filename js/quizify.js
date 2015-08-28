@@ -3,10 +3,12 @@ $( document ).ready(function() {
     var totalScoreMatrix = [0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 	var currentQuestion = 1;
-    var numQuestions = 5;
+    var numQuestions = 7;
 
-    var questionAnswerDelay = 0.1
-    var questionFeedbackDelay = 0.1
+    var questionAnswerDelay = 1.0;
+    var questionFeedbackDelay = 3.0;
+
+    var backgroundClasses = ['spm-1','spm-2','spm-3','spm-4','spm-5','spm-1','spm-2'];
 
 
     // WRAPPER FOR GETTING CURRENT QUESTION NODE:
@@ -71,16 +73,38 @@ $( document ).ready(function() {
                     }
                 }
 
-                // 
-                window.location = 'result.php?program=' + program;
+                TweenMax.to(feedbacks, .3, {alpha:1, delay:questionFeedbackDelay, onComplete: function() {window.location = 'result.php?program=' + program;}});
             } else {
+                // 
                 questionNode().hide();
+
+                // CHANGE BACKGROUND:
+                for( i=0; i<backgroundClasses.length; i++ ) {
+                    $('body').removeClass(backgroundClasses[i]);
+                }
+                $('body').addClass(backgroundClasses[currentQuestion]);
+
+                // RESET NAVIGATION:
+                $('nav.text ul li:nth-child(' + (currentQuestion) + ') span').css('visibility','hidden');
+                $('nav.symbols ul li:nth-child(' + (currentQuestion) + ') div').css('visibility','hidden');
 
                 currentQuestion++;
 
                 questionNode().show();
 
-                TweenMax.to(feedbacks, .3, {alpha:0, delay:questionFeedbackDelay, onComplete: function() {feedbacks.hide();}});
+                // 
+                TweenMax.to(feedbacks, .3, {alpha:0, delay:questionFeedbackDelay, onComplete: function() {
+                    feedbacks.hide();
+
+                    // 
+                    var navSymbol = $('nav.symbols ul li:nth-child(' + currentQuestion + ') div');
+                    TweenMax.to(navSymbol, .3, {alpha:.5, delay:0});
+
+                    if( currentQuestion < numQuestions ) {
+                        var navText = $('nav.text ul li:nth-child(' + currentQuestion + ') span');
+                        TweenMax.to(navText, .3, {alpha:1, delay:.4444});
+                    }
+                }});
             }
         }
     });

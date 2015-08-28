@@ -1,4 +1,6 @@
 <?php
+
+// 
 $localizedStrings = array(
     'START_HEADING' => 'Velkommen til TVNorges valgomat',
     'START_SHORTDESC' => 'Det er valgår i år og TVNorges valgomat kan hjelpe deg med din nest viktigste beslutning denne høsten: Hva du skal se på TV.',
@@ -14,3 +16,13 @@ $localizedStrings = array(
     'COMPLETE_TEASE_TEXT' => 'Bli med i trekningen av signert Ylvis premie'
 );
 
+// 
+$navigationBar = array(
+    'Spørsmål 1',
+    'Spørsmål 2',
+    'Spørsmål 3',
+    'Spørsmål 4',
+    'Spørsmål 5',
+    'Spørsmål 6',
+    'Ferdig'
+);

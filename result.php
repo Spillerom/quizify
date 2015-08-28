@@ -24,7 +24,7 @@ $result = $results[GetURLVar('program', ($num_results-1))];
     <!-- <link rel="shortcut icon" href="favicon.ico" /> -->    
     
     <!-- Here's Golden Gridlet, the grid overlay script. -->
-   <!--  <script src="js/GGS.js"></script> -->
+    <!--  <script src="js/GGS.js"></script> -->
             
     <!-- 
         This script enables structural HTML5 elements in old IE.
@@ -33,31 +33,19 @@ $result = $results[GetURLVar('program', ($num_results-1))];
     <!--[if lt IE 9]>
         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
-    
 </head>
-
 <body class="start-end">
- <script>
-      window.fbAsyncInit = function() {
-              FB.init({
-                            appId      : '1630666833841212',
-                                  xfbml      : true,
-                                        version    : 'v2.3'
-                                            });
-
-                  // ADD ADDITIONAL FACEBOOK CODE HERE
-                };
-
-      (function(d, s, id){
-            var js, fjs = d.getElementsByTagName(s)[0];
-                 if (d.getElementById(id)) {return;}
-                      js = d.createElement(s); js.id = id;
-                           js.src = "//connect.facebook.net/en_US/sdk.js";
-                                fjs.parentNode.insertBefore(js, fjs);
-                                   }(document, 'script', 'facebook-jssdk'));
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
     </script>
-      
+
     <header class="logo">
 		<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
 	</header>
@@ -97,6 +85,8 @@ $result = $results[GetURLVar('program', ($num_results-1))];
     	</section>    
     </section> 
    
+    <section id="bottom-space"></section>
+
     <!-- Body border -->
     <!--[if lte IE 6]>
         <style>#top, #bottom, #left, #right { display: none; }</style>

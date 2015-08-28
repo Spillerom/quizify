@@ -55,7 +55,9 @@ require_once 'set_env.php';
 	        	</div>
         	</section>
         </section>
-        
+
+        <section id="bottom-space"></section>
+
 		<!-- Body border -->
 		<!--[if lte IE 6]>
 			<style>#top, #bottom, #left, #right { display: none; }</style>

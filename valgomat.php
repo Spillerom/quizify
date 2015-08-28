@@ -3,8 +3,9 @@
 require_once 'set_env.php';
 
 // 
-$questionFile = 3;
+$questionFile = rand(1,3);
 require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
+$numQuestions = count($questions);
 ?><!doctype html>
 <!--[if lt IE 9]><html class="ie"><![endif]-->
 <!--[if gte IE 9]><!--><html><!--<![endif]-->
@@ -36,34 +37,37 @@ require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
 	</head>
 	<body lang="no">
 		<header class="logo">
-				<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
+		    <img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
 		</header>
 		
 		<section class="oneway">
 			<section class="wrapper">
-			    
-			    <div class="nav-container">
-					<nav>
-					  <ul>
-					    <li>
-					        <a href="#"></a>
-					    </li>
-					    <li>
-					        <a href="#"></a>
-					    </li>
-					    <li>
-					        <a href="#"></a>
-					    </li>
-					    <li>
-					        <a href="#"></a>
-					    </li>
-					    <li>
-					        <a href="#"></a>
-					    </li>
-					   </ul>
-					</nav>
-				</div>
-
+                 <nav class="text">
+                    <ul>
+                        <?php
+                        for( $i=0; $i<$numQuestions; $i++ ) {
+                        ?>
+                        <li>
+                            <span><?php FlushValue($navigationBar[$i]); ?></span>
+                        </li>
+                        <?php
+                        }
+                        ?>
+                    </ul>
+                    </nav>
+	                <nav class="symbols">
+                    <ul>
+                        <?php
+                        for( $i=0; $i<$numQuestions; $i++ ) {
+                        ?>
+                        <li>
+                            <div class="dott"></div>
+                        </li>
+                        <?php
+                        }
+                        ?>
+                    </ul>
+				</nav>
 			</section>
 		</section>
 						
@@ -80,21 +84,21 @@ require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
 
 		        <section class="twoway">
 			        <section class="wrapper">
-				        <ul class="alternatives" type="A">
+				        <ol class="alternatives" type="A">
 				            <?php
 				            $alternatives = $question['alternatives'];
                             for( $j=0; $j<count($alternatives); $j++ ) {
                                 $alternative = $alternatives[$j];
 				            ?>
                             <li class="alternative">
-                                <div class="custom-radio"></div>
+                                <div class="index"><?php FlushValue($alternativesIndexCharacter[$j]); ?></div>
                                 <div class="text"><?php FlushValue($alternative['text']); ?></div>
                                 <div class="metadata"><?php FlushValue($alternative['score']); ?></div>
 				            </li>		
 				            <?php
 				            }
 				            ?>
-						</ul>
+						</ol>
 						
                  </section>
 

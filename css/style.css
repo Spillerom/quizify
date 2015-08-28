@@ -42,6 +42,17 @@
 
 }
 
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+} 
+
+
 html{
 	height: 100%;
 }
@@ -82,7 +93,7 @@ body.start-end {
 
 
 /* HARALD */
-body.spm-1{
+.spm-1{
 	 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#213a78+0,0a1327+100 */
 	background: #213a78; /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  #213a78 0%, #0a1327 100%); /* FF3.6+ */
@@ -95,7 +106,7 @@ body.spm-1{
 }
 
 /* ODDA */
-body.spm-2{
+.spm-2{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b13220+0,25170e+100 */
 	background: #b13220; /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  #b13220 0%, #25170e 100%); /* FF3.6+ */
@@ -108,7 +119,7 @@ body.spm-2{
 }
 
 /* MAGNUS */
-body.spm-3{
+.spm-3{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#596786+0,2a2f3a+100 */
 	background: #596786; /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  #596786 0%, #2a2f3a 100%); /* FF3.6+ */
@@ -121,7 +132,7 @@ body.spm-3{
 }
 
 /* BÅRD */
-body.spm-4{
+.spm-4{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#566875+0,182738+100 */
 	background: #566875; /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  #566875 0%, #182738 100%); /* FF3.6+ */
@@ -134,7 +145,7 @@ body.spm-4{
 }
 
 /* HENRIK THODESEN */
-body.spm-5{
+.spm-5{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#922a25+0,362e26+100 */
 	background: #922a25; /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  #922a25 0%, #362e26 100%); /* FF3.6+ */
@@ -233,35 +244,68 @@ h1{
 /* STEP-BY-STEP NAV */
 /*--------------*/
 
+nav {
+    margin-bottom: 2em;
+    float: left;
+}
+
 nav ul, li{
 	list-style: none;
 	outline: 0;
   	background: transparent;
 }
+nav.text li span {
+    opacity: 0;
+    margin-left: -80%;
+    font-weight: bold;
+}
+nav.text li:first-child span,
+nav.text li:last-child span {
+    opacity: 1;
+}
 
-nav li:before{
+nav.symbols li::before {
 	content:"";
-	background: url("../images/circle.png") no-repeat top left;
-	background-size: 22px 22px;
+    background-color: #fff;
 	width: 30px;
 	height: 30px;
+    border-radius: 15px;
 	display: block;
-	margin-top: -10px;
+	margin-top: -15px;
+}
+nav.symbols li div {
+    opacity: 0;
+    background-color: #fff;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    margin: -36px -7px;
+    opacity: 0;
+    border-radius: 30px;
+}
+nav.symbols li:first-child div {
+    opacity: 0.5;
 }
 
 nav {
-  text-align: center;
-  width: 100%;
-  margin: 20px 0;
-  border-top: 1px solid #fff; 
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+}
+nav.text {
+    margin-top: 4em;
+}
+nav.symbols {
+    border-top: 1px solid #fff;
+    margin-bottom: 4em;
 }
 
 nav ul {
-  width: 123%;
+  width: 125%;
 }
 
 nav ul li {
-  width: 20%; 
+  width: 13%; 
   float: left;
 }
 
@@ -350,7 +394,6 @@ input[type=radio]:not(old):checked +  label > span > span{
     left: 0;
     top: 0;
     background-color: #000;
-    opacity: 0.8;
 }
 
 .centered {
@@ -383,28 +426,21 @@ input[type=radio]:not(old):checked +  label > span > span{
             .alternatives .alternative:hover {
             	 color: #d21f26;
             }
-            .alternatives .alternative:hover > .custom-radio {
-                background: url("../images/circle.png");
-                background-size: 22px;
-                background-repeat: no-repeat !important;
-                transition: opacity .25s ease-in-out;
-                -moz-transition: opacity .25s ease-in-out;
-                -webkit-transition: opacity .25s ease-in-out;
-               
-            }
-            .alternative .custom-radio {
+            .alternatives .alternative .index {
                 float: left;
-                background: none;
-                background-repeat: no-repeat;
-                background-size: 1.375em;
+                background: #fff;
+                color: #000;
                 width: 2em;
                 height: 2em;
-                margin-right: .5em;
+                border-radius: 1em;
+                text-align: center;
+                line-height: 2em;
+                margin-right: 1em;
             }
-            .alternative .text {
+           .alternative .text {
                 float: left;
                 width: 20em;
-            
+                padding-top: 0.25em;
             }
 
 #feedbacks { 
@@ -433,3 +469,12 @@ input[type=radio]:not(old):checked +  label > span > span{
     #feedback-1-1 {
         display: block;
     }
+
+
+#bottom-space {
+    float: left;
+    width: 100%;
+    padding: 4em 0;
+}
+
+
