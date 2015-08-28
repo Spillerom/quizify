@@ -1,7 +1,7 @@
 <?php
 // 
 require_once 'set_env.php';
-?><!doctype html
+?><!doctype html>
 <!--[if lt IE 9]><html class="ie"><![endif]-->
 <!--[if gte IE 9]><!--><html><!--<![endif]-->
 
@@ -36,25 +36,26 @@ require_once 'set_env.php';
 		
 	</head>
 	<body class="start-end" lang="no">
- 		<header>
-			<section class="logo">
-				<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
-			</section>
+ 		<header class="logo">
+			<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
 		</header>
-
-        <section id="intro-text" class="oneway">
+		
+        <section class="oneway">
             <section class="wrapper">
-                <h1><?php LocalizedString("START-HEADING"); ?></h1>
+                <h1 class="introandresult massive"><?php LocalizedString("START-HEADING"); ?></h1>
             </section>
-            <sectioni class="wrapper">
-                <p><?php LocalizedString('START-SHORTDESC'); ?></p>
+            
+             <section class="wrapper">
+                <p class="message"><?php LocalizedString('START-SHORTDESC'); ?></p>
             </section>
-    	</section>
-
-        <div id="start-button" class="button">
-            <a href="valgomat.php"><?php LocalizedString('START-BUTTON-TEXT'); ?></a>
-        </div>
-
+            
+            <section class="wrapper">
+	            <div id="start-button" class="btn">
+	            	<a href="valgomat.php"><?php LocalizedString('START-BUTTON-TEXT'); ?></a>
+	        	</div>
+        	</section>
+        </section>
+        
 		<!-- Body border -->
 		<!--[if lte IE 6]>
 			<style>#top, #bottom, #left, #right { display: none; }</style>

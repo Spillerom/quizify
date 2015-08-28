@@ -23,7 +23,7 @@ require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
 		<!-- <link rel="shortcut icon" href="favicon.ico" /> -->    
 		
 		<!-- Here's Golden Gridlet, the grid overlay script. -->
-		<script src="js/GGS.js"></script>
+		<!-- /* <script src="js/GGS.js"></script> */ -->
 				
 		<!-- 
 			This script enables structural HTML5 elements in old IE.
@@ -35,10 +35,8 @@ require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
 		
 	</head>
 	<body lang="no">
-		<header>
-			<section class="logo">
+		<header class="logo">
 				<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
-			</section>
 		</header>
 		
 		<section class="oneway">
@@ -76,11 +74,11 @@ require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
 		    ?>
 		    <div id="question-<?php FlushValue($i + 1); ?>" class="question-container">
     
-		        <article class="oneway wrapper">
+		        <section class="oneway wrapper">
 		        	<h1 class="question"><?php FlushValue($question['question']); ?></h1>
-                </article>
+                </section>
 
-		        <article class="twoway">
+		        <section class="twoway">
 			        <section class="wrapper">
 				        <ul class="alternatives">
 				            <?php
@@ -98,15 +96,15 @@ require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
 				            ?>
 						</ul>
 						
-                    </section>
+                 </section>
 
-			      	<section class="wrapper">
+			     <section class="wrapper">
 					    <figure>    
 					        <img src="images/952x636_poster_test.png" alt="Poster">
 					    </figure>     
 				        </div>
 			        </section>
-		        </article><!-- end twoway -->     
+		        </section><!-- end twoway -->     
 		    <?php
 		    }
 		    ?>

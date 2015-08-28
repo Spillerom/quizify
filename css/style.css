@@ -65,10 +65,19 @@ body{
 
 
 body.start-end {
-    background-image: url(../images/1800x1125_startresult_bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+	background-size: cover;    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#464545+0,1a1a1b+100 */
+	background: url(../images/1800x1125_startresult_bg.png) no-repeat center center fixed, #464545; /* Old browsers */
+	background: url(../images/1800x1125_startresult_bg.png) no-repeat center center fixed, -moz-radial-gradient(center, ellipse cover,  #464545 0%, #1a1a1b 100%); /* FF3.6+ */
+	background: url(../images/1800x1125_startresult_bg.png) no-repeat center center fixed, -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#464545), color-stop(100%,#1a1a1b)); /* Chrome,Safari4+ */
+	background: url(../images/1800x1125_startresult_bg.png) no-repeat center center fixed,-webkit-radial-gradient(center, ellipse cover,  #464545 0%,#1a1a1b 100%); /* Chrome10+,Safari5.1+ */
+	background: url(../images/1800x1125_startresult_bg.png) no-repeat center center fixed, -o-radial-gradient(center, ellipse cover,  #464545 0%,#1a1a1b 100%); /* Opera 12+ */
+	background: url(../images/1800x1125_startresult_bg.png) no-repeat center center fixed, -ms-radial-gradient(center, ellipse cover,  #464545 0%,#1a1a1b 100%); /* IE10+ */
+	background: url(../images/1800x1125_startresult_bg.png) no-repeat center center fixed, radial-gradient(ellipse at center,  #464545 0%,#1a1a1b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#464545', endColorstr='#1a1a1b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+
 
 
 
@@ -116,39 +125,43 @@ body.start-end {
 }
 
 /*---------------*/
-/* TYPOGRAPHY   */
+/* TYPOGRAPHY+BUTTON   */
 /*--------------*/
 h1{
 	font-family: 'tvnorgebold', 'Helvetica Neue', Arial, sans-serif;
 	font-style: normal;
 }
 
-#intro-text h1 {
-    text-align: center;
-    width: 100%;
+.btn{
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	width: 100%;
 }
 
-#intro-text p {
-    margin-bottom: 3em;
-    text-align: center;
-    font-size: 1.8em;
-    line-height: 1.5em;
-}
-
-#start-button a, #share-button a {
-    float: left;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
+.btn a{
+	color: #fff;
+    padding: 1.6em 2.2em;
     background-color: #d43128;
-    border-radius: 0.25em;
-    padding: 1em;
-    margin-left: 33%;
-    width: 30%;
+    text-decoration: none;
+    border-radius: 3px;
     box-sizing: border-box;
-    text-align: center;
+	 -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }
+
+.btn a:hover, .btn a:focus{
+    background: #b4221a;
+}
+
+.btn a:active{
+    position: relative;
+    top: 2px; 
+}
+
+
 
 /*---------------*/
 /* STEP-BY-STEP NAV */
