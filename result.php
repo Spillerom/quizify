@@ -11,11 +11,11 @@ $result = $results[GetURLVar('program', ($num_results-1))];
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Valgomat - hva DU bør se på TVNorge denne sessongen?</title>
-    <meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
+    <title><?php LocalizedString('WEB_TITLE'); ?></title>
+    <meta property="og:url"           content="<?php FlushValue($rootURL); ?>" />
     <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Your Website Title" />
-    <meta property="og:description"   content="Your description" />
+    <meta property="og:title"         content="<?php LocalizedString('SHARE_TITLE'); ?>" />
+    <meta property="og:description"   content="<?php LocalizedString('SHARE_ESCRIPTION'); ?>" />
     <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
     
     <link rel="stylesheet" href="css/grid.css"/>
@@ -70,7 +70,7 @@ $result = $results[GetURLVar('program', ($num_results-1))];
         <section class="wrapper">
             <p class="message"><?php FlushValue($result['description']); ?></p>
         </section>
-        
+
         <section class="twoway">
 	        <section class="wrapper">
 	        	<section class="btntease-contain"> 
@@ -82,28 +82,21 @@ $result = $results[GetURLVar('program', ($num_results-1))];
 			            data-image="article-1.jpg" 
 			            data-title="Article Title" 
 			            data-desc="Some description for this article" 
-			            class="btnShare button">Del med venner</a>
+                        class="btnShare button"><?php LocalizedString('SHARE_BUTTON');?></a>
 			    	</div>
 		    	</section>
 	    	</section>
 	    	
 	    	 <section class="wrapper">
 		        <section class="btntease-contain"> 
-			         <h3 class="tease">
-		        		Ikke helt fornøyd? Vi foreslår at du prøver
-					</h3>
+                    <h3 class="tease"><?php LocalizedString('TRY_AGAIN_BUTTON_1'); ?></h3>
 			        <div id="backtostart-button" class="btn">
-			        	<a href="someurl.com/some-article" 
-			            data-image="article-1.jpg" 
-			            data-title="Article Title" 
-			            data-desc="Some description for this article" 
-			            class="btnShare button">Én gang til!</a>
+                        <a href="<?php FlushValue($rootURL); ?>" class="btnShare button"><?php LocalizedString('TRY_AGAIN_BUTTON_2'); ?></a>
 			    	</div>
 		    	</section>
 	    	</section>
 
-    	</section>
-    
+    	</section>    
     </section> 
    
     <!-- Body border -->
@@ -121,6 +114,5 @@ $result = $results[GetURLVar('program', ($num_results-1))];
 
 	<!-- load Greensock TweenMax -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.2/TweenMax.min.js"></script>
-
 </body>
 </html> 

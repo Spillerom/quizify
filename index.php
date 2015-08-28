@@ -42,16 +42,16 @@ require_once 'set_env.php';
 		
         <section class="oneway">
             <section class="wrapper">
-                <h1 class="introandresult massive"><?php LocalizedString("START-HEADING"); ?></h1>
+                <h1 class="introandresult massive"><?php LocalizedString("START_HEADING"); ?></h1>
             </section>
             
              <section class="wrapper">
-                <p class="message"><?php LocalizedString('START-SHORTDESC'); ?></p>
+                <p class="message"><?php LocalizedString('START_SHORTDESC'); ?></p>
             </section>
             
             <section class="wrapper">
 	            <div id="start-button" class="btn">
-	            	<a href="valgomat.php"><?php LocalizedString('START-BUTTON-TEXT'); ?></a>
+	            	<a href="valgomat.php"><?php LocalizedString('START_BUTTON_TEXT'); ?></a>
 	        	</div>
         	</section>
         </section>
