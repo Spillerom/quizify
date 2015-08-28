@@ -3,7 +3,7 @@
 require_once 'set_env.php';
 
 // 
-$questionFile = 3;
+$questionFile = rand(1,3);
 require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
 ?><!doctype html>
 <!--[if lt IE 9]><html class="ie"><![endif]-->
@@ -97,10 +97,9 @@ require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
 						</ul>
 						
                  </section>
-
-			     <section class="wrapper">
+    		     <section class="wrapper">
 					    <figure>    
-					        <img src="images/952x636_poster_test.png" alt="Poster">
+                        <img src="images/<?php FlushValue($posterImages[$i]); ?>" alt="Poster">
 					    </figure>     
 				        </div>
 			        </section>

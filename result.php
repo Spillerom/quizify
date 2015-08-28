@@ -15,7 +15,7 @@ $result = $results[GetURLVar('program', ($num_results-1))];
     <meta property="og:url"           content="<?php FlushValue($rootURL); ?>" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="<?php LocalizedString('SHARE_TITLE'); ?>" />
-    <meta property="og:description"   content="<?php LocalizedString('SHARE_ESCRIPTION'); ?>" />
+    <meta property="og:description"   content="<?php LocalizedString('SHARE_DESCRIPTION'); ?>" />
     <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
     
     <link rel="stylesheet" href="css/grid.css"/>
@@ -74,14 +74,12 @@ $result = $results[GetURLVar('program', ($num_results-1))];
         <section class="twoway">
 	        <section class="wrapper">
 	        	<section class="btntease-contain"> 
-			         <h3 class="tease">
-		        		Bli med i trekningen av signert Ylvis premie:
-					</h3>
+                    <h3 class="tease"><?php LocalizedString('COMPLETE_TEASE_TEXT'); ?></h3>
 			        <div id="backtostart-button" class="btn">
-			        	<a href="someurl.com/some-article" 
-			            data-image="article-1.jpg" 
-			            data-title="Article Title" 
-			            data-desc="Some description for this article" 
+                    <a href="<?php FlushValue($rootURL); ?>" 
+                        data-image="<?php FlushValue($shareImage); ?>" 
+                        data-title="<?php LocalizedString('SHARE_TITLE'); ?>" 
+                        data-desc="<?php LocalizedString('SHARE_DESCRIPTION'); ?>" 
                         class="btnShare button"><?php LocalizedString('SHARE_BUTTON');?></a>
 			    	</div>
 		    	</section>
@@ -91,7 +89,7 @@ $result = $results[GetURLVar('program', ($num_results-1))];
 		        <section class="btntease-contain"> 
                     <h3 class="tease"><?php LocalizedString('TRY_AGAIN_BUTTON_1'); ?></h3>
 			        <div id="backtostart-button" class="btn">
-                        <a href="<?php FlushValue($rootURL); ?>" class="btnShare button"><?php LocalizedString('TRY_AGAIN_BUTTON_2'); ?></a>
+                        <a href="<?php FlushValue($rootURL); ?>/valgomat.php" class="btnShare button"><?php LocalizedString('TRY_AGAIN_BUTTON_2'); ?></a>
 			    	</div>
 		    	</section>
 	    	</section>
