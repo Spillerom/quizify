@@ -199,7 +199,7 @@ body {
 }
 
 h1, h2 {
-  margin: 1.923077em 0 2.3846153846153846em;
+  margin: 1.923077em 0 1.2em;
 }
 
 h2 {
@@ -217,6 +217,7 @@ p{
 
 p.message{
   	font-size: 1.3em;
+  	line-height: 1.5;
   }	
 /*
 *  Simple elastic gutters
@@ -258,6 +259,12 @@ header{
 	clear: both;
 }
 
+.nav-container{
+	width: 70%;
+    height: 2.5em;
+    margin: 0 0 3em 14.5%;
+    }
+
 .oneway .wrapper{
 	width: 100%;
 }
@@ -273,8 +280,14 @@ header{
 .logo{
     margin: 1.5em 0;
 }
-  	 
 
+.btntease-contain{
+	margin-top: 3em;
+}
+
+h3.tease{
+	margin: 2em 0 2em;
+}
 
 @media screen and (max-width: 40em) {
 		
@@ -328,6 +341,16 @@ header{
 	  .logo{
 			margin: 3em 0;
 	}
+	
+	.btntease-contain{
+		margin-top: 4em;
+	}
+	
+	h3.tease{
+		margin: 2em 0 2.2em;
+		padding: 0 7em;
+	}
+
 }
 /*
 *
@@ -357,13 +380,15 @@ header{
   		border-bottom: none;
   }	
   
-  .message{
+  p.message{
   	font-size: 1.6em;
   }
   
-  .btn{
-  	margin-top: 6em;
-  }	
+  	h3.tease{
+		margin: 2em 0 2.2em;
+		padding: 0 3em;
+	}
+
 }
 
 /* @media screen and (min-width: 888px) */
@@ -396,9 +421,6 @@ header{
   	width: 16em;
   }
   
-  p.message{
-  	line-height: 1.5;
-  }
   
   .btn{
   	margin-top: 1em;
@@ -436,7 +458,10 @@ header{
 	.oneway, .twoway {
     	margin: 0 16.666666666666664%;
 	}
- 
+	
+	h3.tease{
+		padding: 0 2em;
+	}
 }
 /* @media screen and (min-width: 1392px) */
 @media screen and (min-width: 87em) {
@@ -450,6 +475,10 @@ header{
    .logo{
   		margin: 5em 0;
   }
+  
+  h3.tease{
+		padding: 0 3em;
+	}
 	
 }
 /* @media screen and (min-width: 1680px) */
@@ -464,6 +493,10 @@ header{
   .menu h1{
   	margin: 0 0 0 5%;
   }
+  
+  h3.tease{
+		padding: 0 5em;
+	}
 }
 /*
 *
@@ -490,6 +523,14 @@ header{
 	.oneway, .twoway {
 	    margin: 0 22%;
 	}
+	
+	h3.tease{
+		padding: 0 1.5em;
+	}
+	
+	 p.message{
+	  	padding: 0 22.5%; 
+	}
 }
 /* @media screen and (min-width: 2080px) */
 @media screen and (min-width: 130em) {
@@ -499,4 +540,8 @@ header{
     font-size: 1.125em;
     max-width: 160em;
   }
+  
+  h3.tease{
+		padding: 0 4.5em;
+	}
 }

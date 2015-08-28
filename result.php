@@ -73,30 +73,33 @@ $result = $results[GetURLVar('program', ($num_results-1))];
         
         <section class="twoway">
 	        <section class="wrapper">
-	       	<h3 class="tease">
-	        	Bli med i trekningen
-				av signert Ylvis premie:
-			</h3>
-		        <div id="share-button" class="btn">
-		        	<a href="someurl.com/some-article" 
-		            data-image="article-1.jpg" 
-		            data-title="Article Title" 
-		            data-desc="Some description for this article" 
-		            class="btnShare button">Del med venner</a>
-		    	</div>
+	        	<section class="btntease-contain"> 
+			         <h3 class="tease">
+		        		Bli med i trekningen av signert Ylvis premie:
+					</h3>
+			        <div id="backtostart-button" class="btn">
+			        	<a href="someurl.com/some-article" 
+			            data-image="article-1.jpg" 
+			            data-title="Article Title" 
+			            data-desc="Some description for this article" 
+			            class="btnShare button">Del med venner</a>
+			    	</div>
+		    	</section>
 	    	</section>
 	    	
 	    	 <section class="wrapper">
-		         <h3 class="tease">
-	        		Misfornøyd?
-				</h3>
-		        <div id="backtostart-button" class="btn">
-		        	<a href="someurl.com/some-article" 
-		            data-image="article-1.jpg" 
-		            data-title="Article Title" 
-		            data-desc="Some description for this article" 
-		            class="btnShare button">Én gang til!</a>
-		    	</div>
+		        <section class="btntease-contain"> 
+			         <h3 class="tease">
+		        		Ikke helt fornøyd? Vi foreslår at du prøver
+					</h3>
+			        <div id="backtostart-button" class="btn">
+			        	<a href="someurl.com/some-article" 
+			            data-image="article-1.jpg" 
+			            data-title="Article Title" 
+			            data-desc="Some description for this article" 
+			            class="btnShare button">Én gang til!</a>
+			    	</div>
+		    	</section>
 	    	</section>
 
     	</section>
