@@ -67,8 +67,6 @@ body{
 
    }
 
-
-
 body.start-end {
 	background-size: cover;    
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#464545+0,1a1a1b+100 */
@@ -82,6 +80,8 @@ body.start-end {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#464545', endColorstr='#1a1a1b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+
+/* HARALD */
 body.spm-1{
 	 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#213a78+0,0a1327+100 */
 	background: #213a78; /* Old browsers */
@@ -94,6 +94,7 @@ body.spm-1{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#213a78', endColorstr='#0a1327',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+/* ODDA */
 body.spm-2{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b13220+0,25170e+100 */
 	background: #b13220; /* Old browsers */
@@ -106,6 +107,7 @@ body.spm-2{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b13220', endColorstr='#25170e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+/* MAGNUS */
 body.spm-3{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#596786+0,2a2f3a+100 */
 	background: #596786; /* Old browsers */
@@ -118,6 +120,7 @@ body.spm-3{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#596786', endColorstr='#2a2f3a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+/* BÅRD */
 body.spm-4{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#566875+0,182738+100 */
 	background: #566875; /* Old browsers */
@@ -130,6 +133,7 @@ body.spm-4{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#566875', endColorstr='#182738',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+/* HENRIK THODESEN */
 body.spm-5{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#922a25+0,362e26+100 */
 	background: #922a25; /* Old browsers */

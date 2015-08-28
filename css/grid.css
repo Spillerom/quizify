@@ -202,6 +202,10 @@ h1, h2 {
   margin: 1.923077em 0 1.2em;
 }
 
+h1.question{
+	margin: 0 0 1.2em;
+}
+
 h2 {
   font-weight: normal;
 }
@@ -262,7 +266,7 @@ header{
 .nav-container{
 	width: 70%;
     height: 2.5em;
-    margin: 4em 0 3em 14.5%;
+    margin: 4em 0 3em 13%;
     }
 
 .oneway .wrapper{
@@ -273,8 +277,16 @@ header{
 	width: 100%;
 }
 
-.logo, h1.introandresult, h3, .message{
+.logo, h1.introandresult, h1.question, h3, .message{
   	text-align: center;
+}
+
+h1.question{
+	width:100%;
+}
+
+.logo{
+	margin: 0;
 }
 
 h1.massive{
