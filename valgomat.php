@@ -3,7 +3,7 @@
 require_once 'set_env.php';
 
 // 
-$questionFile = rand(1,3);
+$questionFile = 3;
 require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
 ?><!doctype html>
 <!--[if lt IE 9]><html class="ie"><![endif]-->
@@ -12,7 +12,7 @@ require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
 	<head>
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-		<title>TVNorges Valgomat</title>
+		<title><?php LocalizedString('WEB_TITLE'); ?></title>
 
 		<!-- Please don't add "maximum-scale=1" here. It's bad for accessibility. -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -80,7 +80,7 @@ require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
 
 		        <section class="twoway">
 			        <section class="wrapper">
-				        <ul class="alternatives">
+				        <ul class="alternatives" type="A">
 				            <?php
 				            $alternatives = $question['alternatives'];
                             for( $j=0; $j<count($alternatives); $j++ ) {
@@ -97,9 +97,10 @@ require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
 						</ul>
 						
                  </section>
-    		     <section class="wrapper">
+
+			     <section class="wrapper">
 					    <figure>    
-                        <img src="<?php FlushValue($rootURL.$posterImages[$i]); ?>" alt="Poster">
+					        <img src="images/952x636_poster_test.png" alt="Poster">
 					    </figure>     
 				        </div>
 			        </section>
