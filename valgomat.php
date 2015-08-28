@@ -12,7 +12,7 @@ require_once 'language/'.$language.'/questions_'.$questionFile.'.php';
 	<head>
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-		<title>Responsive template - animated and mobile menu</title>
+		<title>TVNorges Valgomat</title>
 
 		<!-- Please don't add "maximum-scale=1" here. It's bad for accessibility. -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
