@@ -277,6 +277,10 @@ header{
   	text-align: center;
 }
 
+h1.massive{
+	font-size: 1.5em;
+}
+
 .logo{
     margin: 1.5em 0;
 }
@@ -388,6 +392,15 @@ h3.tease{
 		margin: 2em 0 2.2em;
 		padding: 0 3em;
 	}
+	
+	h1.massive{
+		font-size: 2.5em;
+		letter-spacing: -1px;
+	}
+	
+	figure{
+		display: none;
+	}
 
 }
 
@@ -413,15 +426,20 @@ h3.tease{
   	margin: 3em 0 0 0;
   }
   
-  h1{
-  	margin-bottom: 1.5em;
+  h1.massive{
+  	margin-bottom: 1em;
   }
+  
+  figure{
+		display: block;
+	}
    
   h1.question{
   	width: 16em;
   }
   
   
+   
   .btn{
   	margin-top: 1em;
   }
@@ -476,6 +494,10 @@ h3.tease{
   		margin: 5em 0;
   }
   
+  h1.massive{
+		font-size: 3.2em;
+	}
+  
   h3.tease{
 		padding: 0 3em;
 	}
@@ -493,6 +515,11 @@ h3.tease{
   .menu h1{
   	margin: 0 0 0 5%;
   }
+  
+  h1.massive{
+		font-size: 4em;
+	}
+
   
   h3.tease{
 		padding: 0 5em;
@@ -523,6 +550,11 @@ h3.tease{
 	.oneway, .twoway {
 	    margin: 0 22%;
 	}
+	
+	h1.massive{
+		font-size: 4.5em;
+	}
+
 	
 	h3.tease{
 		padding: 0 1.5em;

@@ -150,6 +150,7 @@ h1{
 	 -webkit-transition-duration: 0.2s;
     -moz-transition-duration: 0.2s;
     transition-duration: 0.2s;
+    margin-bottom: 2em;
 }
 
 .btn a:hover, .btn a:focus{
