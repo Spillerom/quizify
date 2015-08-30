@@ -208,7 +208,7 @@ h1{
 	font-style: normal;
 }
 
-.btn{
+.btn {
 	text-align: center;
 	cursor: pointer;
 	text-transform: uppercase;
@@ -216,7 +216,7 @@ h1{
 	width: 100%;
 }
 
-.btn a{
+.btn a {
 	color: #fff;
     padding: 1.6em 2.2em;
     background-color: #d43128;

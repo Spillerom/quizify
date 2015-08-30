@@ -24,6 +24,19 @@ require_once "set_env.php";
     <![endif]-->
 </head>
 <body class="start-end">
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+        FB.init({appId: '1630666833841212', status: true, cookie: true,
+        xfbml: true});
+        };
+        (function() {
+        var e = document.createElement('script'); e.async = true;
+        e.src = document.location.protocol +
+        '//connect.facebook.net/en_US/all.js';
+        document.getElementById('fb-root').appendChild(e);
+        }());
+    </script>
 
     <header class="logo">
 		<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
@@ -42,9 +55,8 @@ require_once "set_env.php";
 	        <section class="wrapper">
 	        	<section class="btntease-contain"> 
                     <h3 class="tease"><?php LocalizedString('COMPLETE_TEASE_TEXT'); ?></h3>
-                    <div id="backtostart-button" class="btn">
-                    <div class="fb-share-button" data-href="<?php FlushValue($rootURL); ?>" data-layout="button_count"></div>
-                    <a href="http://www.facebook.com/share.php?u=<?php FlushValue($shareURL); ?>" class="btnShare button"><?php LocalizedString('SHARE_BUTTON');?></a>
+			        <div id="backtostart-button" class="btn">
+                        <a="#" class="btnShare button"><?php LocalizedString('SHARE_BUTTON');?></a>
 			    	</div>
 		    	</section>
 	    	</section>
@@ -78,5 +90,10 @@ require_once "set_env.php";
 
 	<!-- load Greensock TweenMax -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.2/TweenMax.min.js"></script>
+
+			
+	<!-- Quizify -->
+	<script src="js/quizify.js"></script>
+
 </body>
 </html> 
