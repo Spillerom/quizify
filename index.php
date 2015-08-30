@@ -12,8 +12,13 @@ require_once 'set_env.php';
 <html>
 	<head>
 		<meta charset="utf-8"/>
+        <title><?php LocalizedString('WEB_TITLE'); ?></title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-		<title><?php LocalizedString('WEB_TITLE'); ?></title>
+	    <meta property="og:url"           content="<?php FlushValue($rootURL); ?>" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Test <?php LocalizedString('SHARE_TITLE'); ?>" />
+        <meta property="og:description"   content="Test <?php LocalizedString('SHARE_DESCRIPTION'); ?>" />
+        <meta property="og:image"         content="<?php FlushValue($rootURL.$facebookShareImage) ?>" />
 
 		<!-- Please don't add "maximum-scale=1" here. It's bad for accessibility. -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
