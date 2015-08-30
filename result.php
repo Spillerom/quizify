@@ -1,16 +1,6 @@
 <?php
 // 
 require_once "set_env.php";
-
-// 
-require_once "language/".$language."/results.php";
-$num_results = count($results);
-$result = $results[GetURLVar('program', ($num_results-1))];
-
-// 
-$shareURL = urlencode($rootURL.'result.php?program='.$result);
-
-
 ?><!DOCTYPE html>
 <html>
 <head>
