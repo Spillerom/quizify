@@ -78,13 +78,13 @@ $numQuestions = count($questions);
 		    ?>
 		    <div id="question-<?php FlushValue($i + 1); ?>" class="question-container">
     
-		        <section class="oneway wrapper">
+		        <section class="oneway">
 		        	<h1 class="question"><?php FlushValue($question['question']); ?></h1>
                 </section>
 
 		        <section class="twoway">
 			        <section class="wrapper">
-				        <ol class="alternatives" type="A">
+				        <ul class="alternatives">
 				            <?php
 				            $alternatives = $question['alternatives'];
                             for( $j=0; $j<count($alternatives); $j++ ) {
@@ -98,13 +98,13 @@ $numQuestions = count($questions);
 				            <?php
 				            }
 				            ?>
-						</ol>
+						</ul>
 						
                  </section>
 
 			     <section class="wrapper">
 					    <figure>    
-					        <img src="images/952x636_poster_test.png" alt="Poster">
+                        <img src="<?php FlushValue($posterImages[$i]); ?>" alt="Poster">
 					    </figure>     
 				        </div>
 			        </section>
