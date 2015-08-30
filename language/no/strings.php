@@ -19,7 +19,7 @@ $shows = array(
 // 
 $localizedStrings = array(
     'START_HEADING' => 'Velkommen til TVNorges valgomat',
-    'START_SHORTDESC' => 'Det er valgår i år og TVNorges valgomat kan hjelpe deg med din nest viktigste beslutning denne høsten: Hva du skal se på TV.',
+    'START_SHORTDESC' => 'Det er valgår og TVNorges valgomat kan hjelpe deg med din nest viktigste beslutning denne høsten: Hva du skal se på TV.',
     'START_BUTTON_TEXT' => 'Start valgomaten',
 
     'WEB_TITLE' => 'Velkommen til TVNorges valgomat',
@@ -42,3 +42,6 @@ $navigationBar = array(
     'Spørsmål 6',
     'Ferdig'
 );
+
+
+?>
