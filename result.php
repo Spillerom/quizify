@@ -18,9 +18,9 @@ $shareURL = urlencode($rootURL.'result.php?program='.$result);
     <title><?php LocalizedString('WEB_TITLE'); ?></title>
     <meta property="og:url"           content="<?php FlushValue($rootURL); ?>" />
     <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="<?php LocalizedString('SHARE_TITLE'); ?>" />
-    <meta property="og:description"   content="<?php LocalizedString('SHARE_DESCRIPTION'); ?>" />
-    <meta property="og:image"         content="<?php FlushValue($facebookShareImage) ?>" />
+    <meta property="og:title"         content="Test <?php LocalizedString('SHARE_TITLE'); ?>" />
+    <meta property="og:description"   content="Test <?php LocalizedString('SHARE_DESCRIPTION'); ?>" />
+    <meta property="og:image"         content="<?php FlushValue($rootURL.$facebookShareImage) ?>" />
     
     <link rel="stylesheet" href="css/grid.css"/>
     <link rel="stylesheet" href="css/style.css"/>
@@ -39,7 +39,7 @@ $shareURL = urlencode($rootURL.'result.php?program='.$result);
     <![endif]-->
 </head>
 <body class="start-end">
-    <!-- Load Facebook SDK for JavaScript
+    <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -49,7 +49,7 @@ $shareURL = urlencode($rootURL.'result.php?program='.$result);
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
     </script>
--->
+
     <header class="logo">
 		<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
 	</header>
@@ -67,7 +67,8 @@ $shareURL = urlencode($rootURL.'result.php?program='.$result);
 	        <section class="wrapper">
 	        	<section class="btntease-contain"> 
                     <h3 class="tease"><?php LocalizedString('COMPLETE_TEASE_TEXT'); ?></h3>
-			        <div id="backtostart-button" class="btn">
+                    <div id="backtostart-button" class="btn">
+                    <div class="fb-share-button" data-href="<?php FlushValue($rootURL); ?>" data-layout="button_count"></div>
                     <a href="http://www.facebook.com/share.php?u=<?php FlushValue($shareURL); ?>" class="btnShare button"><?php LocalizedString('SHARE_BUTTON');?></a>
 			    	</div>
 		    	</section>
