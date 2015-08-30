@@ -20,16 +20,27 @@ $( document ).ready(function() {
 	questionNode().show();
 
     // FACEBOOK SHARE:
-    $('.btnShare').click(function(e) {
+    $('#share-button').click(function(e) {
         e.preventDefault();
+
+        // 
+        var metadata = $(this).find('.metadata');
+
+        var name = metadata.find('.name').text();
+        var link = metadata.find('.link').text();
+        var picture = metadata.find('.image').text();
+        var caption = metadata.find('.caption').text();
+        var description = metadata.find('description').text();
+
+        //
         FB.ui(
         {
             method: 'feed',
-            name: 'This is the content of the "name" field.',
-            link: ' http://www.hyperarts.com/',
-            picture: 'http://www.hyperarts.com/external-xfbml/share-image.gif',
-            caption: 'This is the content of the "caption" field.',
-            description: 'This is the content of the "description" field, below the caption.',
+            name: name,
+            link: link,
+            picture: picture,
+            caption: caption,
+            description: description,
             message: ''
         });
         return false;

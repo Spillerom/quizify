@@ -2,18 +2,18 @@
 
 // 
 $shows = array(
-	'<strong>Brille</strong>',
-	'<strong>Kjendiskveld med Magnus Devold</strong>',
-	'<strong>I kveld med Ylvis Live</strong>',
-	'<strong>Adam søker Eva</strong>',
-	'<strong>En helt vanlig dag</strong>',
-	'<strong>Alt for Norge</strong>',
-	'<strong>Dansken og Fingern: Best i alt</strong>',
-	'<strong>Åndenes makt</strong>',
-	'<strong>Montebello Camping</strong>',
-	'<strong>Gift ved første blikk</strong>',
-	'<strong>Sinnasnekker’n</strong>',
-	'<strong>71° nord</strong>'
+	'Brille',
+	'Kjendiskveld med Magnus Devold',
+	'I kveld med Ylvis Live',
+	'Adam søker Eva',
+	'En helt vanlig dag',
+	'Alt for Norge',
+	'Dansken og Fingern: Best i alt',
+	'Åndenes makt',
+	'Montebello Camping',
+	'Gift ved første blikk',
+	'Sinnasnekker’n',
+	'71° nord'
 );
 
 // 

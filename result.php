@@ -55,8 +55,15 @@ require_once "set_env.php";
 	        <section class="wrapper">
 	        	<section class="btntease-contain"> 
                     <h3 class="tease"><?php LocalizedString('COMPLETE_TEASE_TEXT'); ?></h3>
-			        <div id="backtostart-button" class="btn">
-                        <a="#" class="btnShare button"><?php LocalizedString('SHARE_BUTTON');?></a>
+                    <div id="share-button" class="btn">
+                        <div class="metadata">
+                            <div class="name"><?php LocalizedString('SHARE_TITLE'); FlushValue($shows[$resultId]); ?></div>
+                            <div class="link"><?php FlushValue($rootURL); ?></div>
+                            <div class="image"><?php FlushValue($rootURL.$facebookShareImage); ?></div>
+                            <div class="caption"></div>
+                            <div class="description"><?php LocalizedString('SHARE_DESCRIPTION'); ?></div>
+                        </div>
+                        <a href="#" class="button"><?php LocalizedString('SHARE_BUTTON');?></a>
 			    	</div>
 		    	</section>
 	    	</section>
@@ -65,7 +72,7 @@ require_once "set_env.php";
 		        <section class="btntease-contain"> 
                     <h3 class="tease"><?php LocalizedString('TRY_AGAIN_BUTTON_1'); ?></h3>
 			        <div id="backtostart-button" class="btn">
-                        <a href="<?php FlushValue($rootURL); ?>valgomat.php" class="btnShare button"><?php LocalizedString('TRY_AGAIN_BUTTON_2'); ?></a>
+                        <a href="<?php FlushValue($rootURL); ?>valgomat.php" class="button"><?php LocalizedString('TRY_AGAIN_BUTTON_2'); ?></a>
 			    	</div>
 		    	</section>
 	    	</section>
