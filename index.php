@@ -16,8 +16,8 @@ require_once 'set_env.php';
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	    <meta content="<?php FlushValue($rootURL); ?>" property="og:url" />
         <meta content="website" property="og:type" />
-        <meta content="Test <?php LocalizedString('SHARE_TITLE'); ?>" property="og:title" />
-        <meta content="Test <?php LocalizedString('SHARE_DESCRIPTION'); ?>" property="og:description" />
+        <meta content="<?php LocalizedString('SHARE_TITLE'); ?>" property="og:title" />
+        <meta content="<?php LocalizedString('SHARE_DESCRIPTION'); ?>" property="og:description" />
         <meta content="<?php FlushValue($rootURL.$facebookShareImage) ?>" property="og:image" />
 
 		<!-- Please don't add "maximum-scale=1" here. It's bad for accessibility. -->
@@ -28,9 +28,9 @@ require_once 'set_env.php';
 		
 		<!-- <link rel="shortcut icon" href="favicon.ico" /> -->    
 		
-		<!-- Here's Golden Gridlet, the grid overlay script. -->
+		<!-- Here's Golden Gridlet, the grid overlay script.
 		<script src="js/GGS.js"></script>
-				
+		-->
 		<!-- 
 			This script enables structural HTML5 elements in old IE.
 			http://code.google.com/p/html5shim/
@@ -41,17 +41,6 @@ require_once 'set_env.php';
 		
 	</head>
 	<body class="start-end" lang="no">
-        <!-- Load Facebook SDK for JavaScript -->
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
-            fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
-
 		<header class="logo">
 			<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
 		</header>

@@ -29,16 +29,6 @@ require_once "set_env.php";
     <![endif]-->
 </head>
 <body class="start-end">
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
 
     <header class="logo">
 		<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
