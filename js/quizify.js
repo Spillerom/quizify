@@ -30,7 +30,7 @@ $( document ).ready(function() {
         var link = metadata.find('.link').text();
         var picture = metadata.find('.image').text();
         var caption = metadata.find('.caption').text();
-        var description = metadata.find('description').text();
+        var description = metadata.find('.description').text();
 
         //
         FB.ui(
