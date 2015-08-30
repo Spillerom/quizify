@@ -40,7 +40,7 @@ $facebookShareImage = $facebookShareImages[rand(0,4)];
 require_once "language/".$language."/results.php";
 $num_results = count($results);
 
-$resultId = GetURLVar('program', ($num_results-1);
+$resultId = GetURLVar('program', ($num_results-1));
 
 $result = $results[$resultId];
 
