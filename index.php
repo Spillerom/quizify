@@ -16,7 +16,7 @@ require_once 'set_env.php';
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	    <meta content="<?php FlushValue($rootURL.'?program='.$resultId); ?>" property="og:url" />
         <meta content="website" property="og:type" />
-        <meta content="<?php LocalizedString('SHARE_TITLE_1'); FlushValue($shows[$resultId]); ?>" property="og:title" />
+        <meta content="<?php LocalizedString('SHARE_TITLE'); FlushValue($shows[$resultId]); ?>" property="og:title" />
         <meta content="<?php LocalizedString('SHARE_DESCRIPTION'); ?>" property="og:description" />
         <meta content="<?php FlushValue($rootURL.$facebookShareImage) ?>" property="og:image" />
 
