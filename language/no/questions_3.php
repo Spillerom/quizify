@@ -145,7 +145,7 @@ $questions = array(
             array(
                 'text' => 'Reality',
                 'score' => '1.0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Vær deg selv 110 prosent!.'
+                'feedback' => 'Vær deg selv 110 prosent!'
             ),
             array(
                 'text' => 'Humor',
