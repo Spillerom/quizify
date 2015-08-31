@@ -96,8 +96,9 @@ $questions = array(
 		        'text' => 'Garderoben til Christine Koht',
 		        'score' => '0,0,0,5,0,0,0,0,5,5,0,0,0',
 		        'feedback' => 'xs'
-        )
-    ),
+        	)
+	    ),
+	),
     array(
         'question' => 'Hva ville du gjort hvis du var TVNorge-sjef en dag?',
         'alternatives' => array(

@@ -26,10 +26,10 @@ $localizedStrings = array(
     'SHARE_TITLE' => 'TVNorges valgomat har bestemt at mitt favorittprogram på TV denne høsten er ',
     'SHARE_DESCRIPTION' => 'Ta valgomaten her og vær med i trekningen av en signert Ylvis-premie.',
 
-    'SHARE_BUTTON' => 'Del med venner',
+    'SHARE_BUTTON' => 'Del på Facebook',
     'TRY_AGAIN_BUTTON_1' => 'Ikke helt fornøyd? Vi foreslår at du prøver',
     'TRY_AGAIN_BUTTON_2' => 'Én gang til!',
-    'COMPLETE_TEASE_TEXT' => 'Bli med i trekningen av signert Ylvis premie'
+    'COMPLETE_TEASE_TEXT' => 'Bli med i trekningen av signert Ylvis-premie'
 );
 
 // 

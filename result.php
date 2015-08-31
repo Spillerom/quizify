@@ -6,7 +6,12 @@ require_once "set_env.php";
 <head>
     <meta charset="UTF-8">
     <title><?php LocalizedString('WEB_TITLE'); ?></title>
-   
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!-- Please don't add "maximum-scale=1" here. It's bad for accessibility. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
     <link rel="stylesheet" href="css/grid.css"/>
     <link rel="stylesheet" href="css/style.css"/>
          

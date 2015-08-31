@@ -20,22 +20,22 @@
 
 $questions = array(
 	array(
-        'question' => 'Hvem i TVNorge-universet er kjent for uttrykk som «Legendarisk smud» og «Bænkers ordnings»?',
+        'question' => 'Hvem i TVNorge-universet er kjent for uttrykk som «legendarisk smud» og «bænkers ordnings»?',
         'alternatives' => array(
             array(
-                'text' => '«Alexander Molteberg spilt av Lene Kongsvik Johansen', 
+                'text' => '«Alexander Molteberg, spilt av Lene Kongsvik Johansen.', 
                 'score' => '0,5,0,0,10,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Korrekt, eller «sykt stålkontroll» som Alexander ville sagt'
+            	'feedback' => 'Korrekt. Eller «sykt stålkontroll» som Alexander ville ha sagt.'
             ),
             array(
-                'text' => 'Ine Jansen på TVNorges julebord i 2012',
+                'text' => 'Ine Jansen på TVNorges julebord i 2012.',
                 'score' => '5,0,0,0,5,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Bare lat som ingenting hvis du møter henne'
+            	'feedback' => 'Ine har helt andre uttrykk i sitt arsenal.'
             ),
             array(
-                'text' => 'Jarle Andhøy snøvla det da han slentra forbi kontoret i stad',
+                'text' => 'Jarle Andhøy snøvla det da han slentra forbi i stad.',
                 'score' => '0,0,0,0,0,0,0,0,10,0,5,0,0',
-            	'feedback' => 'Fun fact: Vi har ikke hørt fra Jarle etter han dro til Antarktis med Anne Kat.(emoji)'
+            	'feedback' => 'Vi har ikke hørt fra Jarle etter han dro til Antarktis med Anne-Kat.'
             )
         )
 	),
@@ -45,17 +45,17 @@ $questions = array(
             array(
                 'text' => 'Espen Eckbo rydder opp - hjemme',
                 'score' => '5,3,0,0,5,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Gjeeesp'
+            	'feedback' => 'Kanskje hvis han rydder i sånn fransk hushjelp-kostyme'
             ),
             array(
                 'text' => '«Odda» og Henrik nakendater',
                 'score' => '0,0,0,5,5,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Eventuelt Hver gang vi nakendater eller Skal vi nakendate'
+            	'feedback' => 'Eventuelt Hver gang vi nakendater eller Skal vi nakendate?'
             ),
             array(
-                'text' => 'Hvem kan slå Kristian Valen og Lilli Bendriss',
+                'text' => 'Hvem kan slå Kristian Valen og Lilli Bendriss?',
                 'score' => '0,0,0,0,0,0,0,5,5,0,5,0,0',
-                'feedback' => 'Vi vippser deg 100 kroner hvis du tør å foreslå konseptet for Kristian og Lilli'
+                'feedback' => 'Vi vippser deg 100 kroner hvis du tør å foreslå konseptet for Kristian og Lilli.'
             )
         )
     ),
@@ -63,39 +63,39 @@ $questions = array(
         'question' => 'Hva hadde du savnet mest på en øde øy?',
         'alternatives' => array(
             array(
-                'text' => 'En blind date uten klær',
+                'text' => 'En blind date uten klær.',
                 'score' => '0,0,0,10,0,0,0,0,0,5,0,0,0',
-            	'feedback' => 'Sliter du på Tinder? (Eventuelt Grindr)'
+            	'feedback' => 'Sliter du kanskje på Tinder? (Eventuelt Grindr)'
             ),
             array(
-                'text' => 'Skamløs kjendisjournalistikk',
+                'text' => 'Skamløs kjendisjournalistikk.',
                 'score' => '0,10,0,0,0,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Se og Hør kommer til å fremstå som IKEA-katalogen når Kjendiskveld med Magnus Devold går på lufta'
+            	'feedback' => 'Se og Hør kommer til å fremstå som IKEA-katalogen når Kjendiskveld med Magnus Devold går på lufta.'
             ),
             array(
-                'text' => 'Lokkene til Vegard Ylvisåker',
+                'text' => 'Lokkene til Vegard Ylvisåker.',
                 'score' => '0,0,10,0,0,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Han lukter godt også FYI'
+            	'feedback' => 'Han lukter godt også, FYI.'
             )
         )
     ),
     array(
-        'question' => 'Hvilken av de følgende kombinasjoner foretrekker du en kveld foran TV-skjermen?',
+        'question' => 'Hvilken av følgende kombinasjoner foretrekker du en kveld foran TV-skjermen?',
         'alternatives' => array(
             array(
-                'text' => 'Rødvin og muggost som er vrien på både uttale og smak',
+                'text' => 'Rødvin og muggost som er vrien på både uttale og smak.',
                 'score' => '10,0,0,0,0,5,0,0,0,0,0,0,0',
-                'feedback' => 'Hva med en flaske Alary La Font d´Estévenas og en Bleu de Gex, din snobb'
+                'feedback' => 'Hva med en flaske Alary La Font d´Estévenas og en Bleu de Gex, din snobb?'
             ),
             array(
-                'text' => 'Ostepop og barnevakt',
+                'text' => 'Ostepop og barnevakt.',
                 'score' => '0,0,0,0,0,0,0,0,5,0,5,0,0',
-                'feedback' => 'Eller en annen type snacks som våre annonsører reklamerer for (produktplasseringsP)'
+                'feedback' => 'Eller en annen type snacks som TVNorges annonsører reklamerer for.'
             ),
             array(
-                'text' => 'Snapchat og multitasking',
+                'text' => 'Snapchat og multitasking.',
                 'score' => '0,0,0,0,5,0,10,0,0,0,0,0,0',
-                'feedback' => 'Psst! Sjekk tvnorgesnap'
+                'feedback' => 'Psst! Sjekk tvnorgesnap.'
             )
         )
     ),
@@ -105,17 +105,17 @@ $questions = array(
             array(
                 'text' => 'Nja, hvorfor ikke?',
                 'score' => '0,0,0,0,0,5,0,0,0,0,0,5,0',
-                'feedback' => 'Tom vet å by på seg selv. Du skulle vært med på julebordet i fjor'
+                'feedback' => 'Tom byr gjerne på seg selv.'
             ),
             array(
                 'text' => 'Kan jeg by på litt rødvin og muggost som er vrien på både uttale og smak?',
                 'score' => '3,0,0,0,0,3,0,0,0,0,0,10,0',
-                'feedback' => 'Tom er nok litt mer på primus og pinnebrød-kjøret, men hvem vet?'
+                'feedback' => 'Tom er nok litt mer på primus og pinnebrød-kjøret.'
             ),
             array(
                 'text' => 'Hvem slapp inn Stalker-Stiansen?!? ALARM! ALARM!',
                 'score' => '0,5,5,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Hvis du bare åpner vinduet så flyr han ut av seg selv'
+                'feedback' => 'Hvis du bare åpner vinduet så flyr han ut av seg selv.'
             )
         )
     ),
@@ -123,19 +123,19 @@ $questions = array(
         'question' => 'Ylvis er tilbake på skjermen i høst. Hva tenker du om det?',
         'alternatives' => array(
             array(
-                'text' => 'OMG! (:) :) :)) jeg er admin på Kløftas største Ylvis-fansie på Instagram. Er bilettene til liveshowet lagt ut? (emoji)',
+                'text' => 'OMG! (:) :) :)) jeg er admin på Kløftas største Ylvis-fanside på Instagram. Er billettene til liveshowet lagt ut?',
                 'score' => '0,10,50,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Keep calm and sjekk ut billettservice.no senere i høst'
+                'feedback' => 'Keep calm and sjekk ut billettservice senere i høst.'
             ),
             array(
-                'text' => 'Næh, de var bedre før da de var indie i Bergen',
+                'text' => 'Næh, de var bedre før da de var indie i Bergen.',
                 'score' => '5,0,0,0,5,0,0,0,0,0,0,0,0',
-                'feedback' => '90-tallet ringte. De vil gjerne ha grungejakka og tonefallet sitt tilbake'
+                'feedback' => '90-tallet ringte. De vil gjerne ha grungejakka og attituden tilbake.'
             ),
             array(
                 'text' => 'Hva er en Ylvis og hva er en OMG?',
                 'score' => '0,0,0,0,0,0,0,5,5,0,5,5,0',
-                'feedback' => 'Det er mye fint fjernsynsteater på NRK 2'
+                'feedback' => 'Det er mye fint fjernsynsteater på NRK2 du kan sjekke ut.'
             )
         )
     ),
@@ -145,7 +145,7 @@ $questions = array(
             array(
                 'text' => 'Reality',
                 'score' => '0,0,0,10,0,10,0,0,0,10,0,10,0',
-                'feedback' => 'Sorry. Det blir ikke noe mer av Den siste viking'
+                'feedback' => 'Sorry. Det blir ikke noe mer av Den siste viking.'
             ),
             array(
                 'text' => 'Humor',
@@ -155,7 +155,7 @@ $questions = array(
             array(
                 'text' => 'Underholdning',
                 'score' => '0,0,10,0,0,0,0,10,10,0,10,0,0',
-                'feedback' => 'Det var hyggelig av deg å svare'
+                'feedback' => 'Gullrekka må se seg over skuldra.'
             )
         )
     )

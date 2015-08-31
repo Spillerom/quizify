@@ -12,15 +12,8 @@ require_once 'set_env.php';
 	<head>
 		<meta charset="utf-8"/>
         <title><?php LocalizedString('WEB_TITLE'); ?></title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-        <!--
-	    <meta content="<?php FlushValue($rootURL.'?program='.$resultId); ?>" property="og:url" />
-        <meta content="website" property="og:type" />
-        <meta content="<?php LocalizedString('SHARE_TITLE'); FlushValue($shows[$resultId]); ?>" property="og:title" />
-        <meta content="<?php LocalizedString('SHARE_DESCRIPTION'); ?>" property="og:description" />
-        <meta content="<?php FlushValue($rootURL.$facebookShareImage) ?>" property="og:image" />
-        -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 		<!-- Please don't add "maximum-scale=1" here. It's bad for accessibility. -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
