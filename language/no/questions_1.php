@@ -70,12 +70,12 @@ $questions = array(
             array(
                 'text' => 'Hjem til meg.',
                 'score' => '0,0,0,0,0,10,4,0,0,0,0,0,0',
-                'feedback' => 'Da må du ikke lære dem altfor stygge banneord.'
+                'feedback' => 'Da må du ikke lære dem stygge banneord.'
             ),
             array(
                 'text' => 'På harryhandel i Sverige.',
                 'score' => '0,3,0,0,10,0,0,0,0,0,0,0,0',
-                'feedback' => 'De hadde trivdes i Ullared.'
+                'feedback' => 'De hadde kost seg i Ullared.'
             )
         )
     ),
@@ -105,7 +105,7 @@ $questions = array(
             array(
                 'text' => 'NRK planter kringkastingsmicrochips i nyfødte barn gjennom vaksineprogrammet, finansiert av økt lisensavgift.',
                 'score' => '3,3,3,0,3,0,0,0,0,0,0,0,0',
-            	'feedback' => '#KonspirasjonNRK #TheTruthIsOutThere'
+            	'feedback' => '#KonspirasjonNRK'
             ),
             array(
                 'text' => 'Google Glasses som streamer Monster-HD med 17G.',
@@ -135,7 +135,7 @@ $questions = array(
             array(
                 'text' => 'Jeg ser nesten ikke på TV lenger, jeg. Det er så mye bra på Netflix og Popcorn Time.',
                 'score' => '0,0,5,0,0,0,5,0,0,0,0,0,0',
-            	'feedback' => 'Blah blah blah, vi hører ikke hva du sier.'
+            	'feedback' => 'Blah blah, vi hører ikke hva du sier.'
             )
         )
     ),
@@ -145,17 +145,17 @@ $questions = array(
             array(
                 'text' => 'Reality',
                 'score' => '0,0,0,10,0,10,0,0,0,10,0,10,0',
-                'feedback' => 'Sorry. Det blir ikke noe mer Den siste viking.'
+                'feedback' => 'Vær deg selv 110 prosent!.'
             ),
             array(
                 'text' => 'Humor',
                 'score' => '10,10,0,0,10,0,10,0,0,0,0,0,0',
-                'feedback' => 'Hvordan vet du at en bil er fra Jamaica? På REGGAEstreringsskiltet!'
+                'feedback' => 'Har du hørt den om …'
             ),
             array(
                 'text' => 'Underholdning',
                 'score' => '0,0,10,0,0,0,0,10,10,0,10,0,0',
-                'feedback' => 'Det var hyggelig av deg å svare.'
+                'feedback' => 'Gullrekka må se seg over skuldra.'
             )
         )
     )

@@ -23,39 +23,39 @@ $questions = array(
         'question' => 'Å lage TV av at noen dater nakne på en øde stillehavsøy er ...',
         'alternatives' => array(
             array(
-                'text' => 'Et spennende sosialt eksperiment',
+                'text' => 'et spennende sosialt eksperiment.',
                 'score' => '0,0,0,25,0,0,0,0,0,5,0,0,0',
-                'feedback' => 'Hmmm. Den har vi hørt før'
+                'feedback' => 'Hmmm. Den har vi hørt før.'
             ),
             array(
-                'text' => 'Starten på slutten for vanlig verdighet',
+                'text' => 'starten på slutten for vanlig verdighet.',
                 'score' => '10,0,0,0,0,0,5,0,0,0,0,0,0',
-                'feedback' => 'Programmet er faktisk kleinest når de kler på seg på slutten'
+                'feedback' => 'Det sa de om Big Brother også.'
             ),
             array(
                 'text' => 'Påvirker denne testen min søknad om å være med i Adam søker Eva?',
                 'score' => '0,0,0,50,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Neida, joda, neida'
+                'feedback' => 'Neida, joda, neida.'
             )
         )
     ),
     array(
-        'question' => 'Programmet Montebello camping har premiere til høsten. Hva tror du det handler om?',
+        'question' => 'Programmet Montebello Camping har premiere til høsten. Hva tror du det handler om?',
         'alternatives' => array(
             array(
-                'text' => 'Et spennende sosialt eksperiment',
+                'text' => 'Et spennende sosialt eksperiment.',
                 'score' => '0,0,0,0,0,5,0,0,10,0,0,0,0',
-                'feedback' => 'Det er kanskje å ta det litt langt?'
+                'feedback' => 'Det er kanskje å dra det litt langt?'
             ),
             array(
-                'text' => 'En livsglad gjeng i campingvogner på svenskegrensa',
+                'text' => 'En livsglad gjeng i campingvogner på svenskegrensa.',
                 'score' => '0,0,0,0,0,0,0,0,10,0,0,0,0',
                 'feedback' => 'Så du har vært der?'
             ),
             array(
-                'text' => 'Sakte-TV fra et snobbete boligstrøk på Oslo vest',
+                'text' => 'Sakte-TV fra et snobbete boligstrøk på Oslo vest.',
                 'score' => '5,0,5,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Ikke prøv å selge ideen til NRK. Vi kom på den først'
+                'feedback' => 'Ikke prøv å selge ideen til NRK.'
             )
         )
     ),
@@ -63,19 +63,19 @@ $questions = array(
         'question' => 'Hvor i landet hadde du sendt Alt for Norge-deltakerne?',
         'alternatives' => array(
             array(
-                'text' => 'Et sted med duvende budeier og nasjonalromantisk overdose',
+                'text' => 'Et sted med duvende budeier og nasjonalromantisk overdose.',
                 'score' => '0,0,0,0,0,10,0,0,0,0,0,7,0',
-                'feedback' => 'Prøver du å smiske nå?'
+                'feedback' => 'Smisker du nå?'
             ),
             array(
-                'text' => 'Hjem til meg',
+                'text' => 'Hjem til meg.',
                 'score' => '0,0,0,0,0,10,4,0,0,0,0,0,0',
-                'feedback' => 'Da får du ikke lov til å lære dem altfor stygge banneord'
+                'feedback' => 'Da må du ikke lære dem altfor stygge banneord.'
             ),
             array(
-                'text' => 'Til en helt vanlig dag hos Petter Schjerven',
+                'text' => 'På harryhandel i Sverige.',
                 'score' => '0,3,0,0,10,0,0,0,0,0,0,0,0',
-                'feedback' => 'Ikke spør oss om hva det innebærer'
+                'feedback' => 'De hadde trivdes i Ullared.'
             )
         )
     ),
@@ -85,17 +85,17 @@ $questions = array(
             array(
                 'text' => 'Sinnasnekker`n gifter seg ved første blikk',
                 'score' => '0,0,0,0,0,0,0,0,0,10,10,0,0',
-                'feedback' => 'De seertallene kan vi bare drømme om'
+                'feedback' => 'De seertallene kan vi bare drømme om.'
             ),
             array(
                 'text' => 'Åndenes kjendiskveld',
                 'score' => '0,10,0,0,0,0,0,10,0,0,0,0,0',
-                'feedback' => 'Elvis og 2Pac inviterer'
+                'feedback' => 'Elvis og 2Pac inviterer.'
             ),
             array(
                 'text' => '71° Thomas Giertsen',
                 'score' => '5,0,5,0,0,0,0,0,0,0,0,10,0',
-                'feedback' => 'Var det seriøst noen som valgte denne?'
+                'feedback' => 'Seriøst. Hadde du sett på det?'
             )
         )
     ),
@@ -103,19 +103,19 @@ $questions = array(
         'question' => 'Hvordan ser vi på TV om 10 år?',
         'alternatives' => array(
             array(
-                'text' => 'NRK planter kringkastingsmicrochips i nyfødte barn gjennom vaksineprogrammet, finansiert av økt lisensavgift',
+                'text' => 'NRK planter kringkastingsmicrochips i nyfødte barn gjennom vaksineprogrammet, finansiert av økt lisensavgift.',
                 'score' => '3,3,3,0,3,0,0,0,0,0,0,0,0',
             	'feedback' => '#KonspirasjonNRK #TheTruthIsOutThere'
             ),
             array(
-                'text' => 'Google Glasses som streamer Monster-HD med 17G',
+                'text' => 'Google Glasses som streamer Monster-HD med 17G.',
                 'score' => '0,0,0,0,5,0,5,0,0,0,0,0,0',
-            	'feedback' => 'Pornobransjen må bare bli enig om standard format først'
+            	'feedback' => 'Blunk hvis du vil skifte kanal.'
             ),
             array(
-                'text' => 'Cirka sånn som vi ser på TV i dag',
+                'text' => 'Cirka sånn som vi ser på TV i dag.',
                 'score' => '0,0,0,0,5,0,0,5,5,5,0,0,0',
-            	'feedback' => 'Det høres koseligst ut'
+            	'feedback' => 'Det høres koseligst ut.'
             )
         )
     ),
@@ -123,19 +123,19 @@ $questions = array(
         'question' => 'Hvilket utsagn beskriver deg best?',
         'alternatives' => array(
             array(
-                'text' => 'Det er altfor lite reklame på TV nå om da`n',
+                'text' => 'Det er altfor lite reklame på TV nå om da`n.',
                 'score' => '0,0,0,0,0,0,0,0,0,0,10,10,0',
-            	'feedback' => 'Saklig. Det har du aldri sagt'
+            	'feedback' => 'Saklig. Det har du aldri sagt.'
             ),
             array(
-                'text' => 'TVNorge er klart best på humor',
+                'text' => 'TVNorge er klart best på humor.',
                 'score' => '5,5,0,0,5,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Motta 1 000 000 poeng'
+            	'feedback' => 'Motta 1 000 000 poeng!'
             ),
             array(
-                'text' => 'Jeg ser nesten ikke på TV lenger, jeg. Det er så mye bra på Netflix og Popcorn Time',
+                'text' => 'Jeg ser nesten ikke på TV lenger, jeg. Det er så mye bra på Netflix og Popcorn Time.',
                 'score' => '0,0,5,0,0,0,5,0,0,0,0,0,0',
-            	'feedback' => 'Blah blah blah, vi hører ikke hva du sier'
+            	'feedback' => 'Blah blah blah, vi hører ikke hva du sier.'
             )
         )
     ),
@@ -145,7 +145,7 @@ $questions = array(
             array(
                 'text' => 'Reality',
                 'score' => '0,0,0,10,0,10,0,0,0,10,0,10,0',
-                'feedback' => 'Sorry. Det blir ikke noe mer av Den siste viking'
+                'feedback' => 'Sorry. Det blir ikke noe mer Den siste viking.'
             ),
             array(
                 'text' => 'Humor',
@@ -155,7 +155,7 @@ $questions = array(
             array(
                 'text' => 'Underholdning',
                 'score' => '0,0,10,0,0,0,0,10,10,0,10,0,0',
-                'feedback' => 'Det var hyggelig av deg å svare'
+                'feedback' => 'Det var hyggelig av deg å svare.'
             )
         )
     )

@@ -25,17 +25,17 @@ $questions = array(
             array(
                 'text' => '«Alexander Molteberg, spilt av Lene Kongsvik Johansen.', 
                 'score' => '0,5,0,0,10,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Korrekt. Eller «sykt stålkontroll» som Alexander ville ha sagt.'
+            	'feedback' => 'Korrekt. Eller «sykt stålkontroll» som Alex ville ha sagt.'
             ),
             array(
                 'text' => 'Ine Jansen på TVNorges julebord i 2012.',
                 'score' => '5,0,0,0,5,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Ine har helt andre uttrykk i sitt arsenal.'
+            	'feedback' => 'Nix. Ine har helt andre uttrykk i sitt arsenal.'
             ),
             array(
                 'text' => 'Jarle Andhøy snøvla det da han slentra forbi i stad.',
                 'score' => '0,0,0,0,0,0,0,0,10,0,5,0,0',
-            	'feedback' => 'Vi har ikke hørt fra Jarle etter han dro til Antarktis med Anne-Kat.'
+            	'feedback' => 'Nope. Jarle har litt mer ramsalt ordbruk.'
             )
         )
 	),
@@ -55,7 +55,7 @@ $questions = array(
             array(
                 'text' => 'Hvem kan slå Kristian Valen og Lilli Bendriss?',
                 'score' => '0,0,0,0,0,0,0,5,5,0,5,0,0',
-                'feedback' => 'Vi vippser deg 100 kroner hvis du tør å foreslå konseptet for Kristian og Lilli.'
+                'feedback' => 'Vi vippser deg 100 kroner hvis du foreslår ideen for Kristian.'
             )
         )
     ),
@@ -70,7 +70,7 @@ $questions = array(
             array(
                 'text' => 'Skamløs kjendisjournalistikk.',
                 'score' => '0,10,0,0,0,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Se og Hør kommer til å fremstå som IKEA-katalogen når Kjendiskveld med Magnus Devold går på lufta.'
+            	'feedback' => 'Magnus Devold er på saken.'
             ),
             array(
                 'text' => 'Lokkene til Vegard Ylvisåker.',
@@ -85,12 +85,12 @@ $questions = array(
             array(
                 'text' => 'Rødvin og muggost som er vrien på både uttale og smak.',
                 'score' => '10,0,0,0,0,5,0,0,0,0,0,0,0',
-                'feedback' => 'Hva med en flaske Alary La Font d´Estévenas og en Bleu de Gex, din snobb?'
+                'feedback' => 'Hva med en flaske Alary La Font d´Estévenas og en Bleu de Gex?'
             ),
             array(
                 'text' => 'Ostepop og barnevakt.',
                 'score' => '0,0,0,0,0,0,0,0,5,0,5,0,0',
-                'feedback' => 'Eller en annen type snacks som TVNorges annonsører reklamerer for.'
+                'feedback' => 'Eller en annen type snacks som våre annonsører reklamerer for.'
             ),
             array(
                 'text' => 'Snapchat og multitasking.',
@@ -130,7 +130,7 @@ $questions = array(
             array(
                 'text' => 'Næh, de var bedre før da de var indie i Bergen.',
                 'score' => '5,0,0,0,5,0,0,0,0,0,0,0,0',
-                'feedback' => '90-tallet ringte. De vil gjerne ha grungejakka og attituden tilbake.'
+                'feedback' => '90-tallet ringte. De vil ha grungejakka og ironien tilbake.'
             ),
             array(
                 'text' => 'Hva er en Ylvis og hva er en OMG?',
@@ -145,12 +145,12 @@ $questions = array(
             array(
                 'text' => 'Reality',
                 'score' => '0,0,0,10,0,10,0,0,0,10,0,10,0',
-                'feedback' => 'Sorry. Det blir ikke noe mer av Den siste viking.'
+                'feedback' => 'Vær deg selv 110 prosent!.'
             ),
             array(
                 'text' => 'Humor',
                 'score' => '10,10,0,0,10,0,10,0,0,0,0,0,0',
-                'feedback' => 'Hvordan vet du at en bil er fra Jamaica? På REGGAEstreringsskiltet!'
+                'feedback' => 'Har du hørt den om …'
             ),
             array(
                 'text' => 'Underholdning',

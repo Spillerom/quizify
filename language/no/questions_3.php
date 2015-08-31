@@ -55,7 +55,7 @@ $questions = array(
             array(
                 'text' => 'Ine Jansen er kretsmester i håndbak.',
                 'score' => '0,5,0,0,0,5,0,0,5,0,0,0,0',
-                'feedback' => 'Fleip. Men hun har blikket til en kretsmester iblant.'
+                'feedback' => 'Fleip. Men hun har blikket til en kretsmester.'
             )
         )
     ),
@@ -73,9 +73,9 @@ $questions = array(
                 'feedback' => 'Har du sett gangstertatoveringene hans, eller?.'
             ),
             array(
-                'text' => 'Bård Ylvisåker. Får jeg virkelig nummeret til Bård?',
+                'text' => 'Bård Ylvisåker. Får jeg virkelig telefonnummeret til Bård?',
                 'score' => '0,0,50,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Sorry, Bård har megahemmelig NASA-kryptert telefonnummer.'
+                'feedback' => 'Sorry, Bård har megahemmelig NASA-kryptert nummer.'
             )
         )
     ),
@@ -85,12 +85,12 @@ $questions = array(
 		    array(
 		        'text' => 'Lusekofta til Asbjørn Brekke.',
 		        'score' => '0,0,5,0,0,0,0,0,0,0,0,5,0',
-		        'feedback' => 'Kanskje du ombestemmer deg når du ser rødvinsflekkene.'
+		        'feedback' => 'Du ombestemmer deg når du ser rødvinsflekkene.'
 		    ),
 		    array(
 		        'text' => 'En lokk av Magnus Devolds hår.',
 		        'score' => '5,10,0,0,0,0,0,0,0,0,0,0,0',
-		        'feedback' => 'Vi kan klippe av en liten tufs til deg når Magnus sover.'
+		        'feedback' => 'Vi kan klippe en liten tufs til deg når Magnus sover.'
 		    ),
 		    array(
 		        'text' => 'Garderoben til Christine Koht.',
@@ -105,7 +105,7 @@ $questions = array(
             array(
                 'text' => 'Tvunget Harald Eia til å holde tale i bursdagen din.',
                 'score' => '10,0,0,0,5,0,0,0,0,0,0,0,0',
-                'feedback' => 'Be han dra en vits om avansert molekylærbiologi.'
+                'feedback' => 'Be han dra en vits om avansert spillteori.'
             ),
             array(
                 'text' => 'Sneket deg med på innspilling av Åndenes makt for å se om spøkelsene er ekte.',
@@ -115,7 +115,7 @@ $questions = array(
             array(
                 'text' => 'Gitt Magnus Devold en ordentlig TV-jobb.',
                 'score' => '0,25,10,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Voilà. Kjendiskveld med Magnus Devold har premiere 8 september.'
+                'feedback' => 'Voilà. Kjendiskveld med Magnus Devold har premiere 8. september.'
             )
         )
     ),
@@ -145,12 +145,12 @@ $questions = array(
             array(
                 'text' => 'Reality',
                 'score' => '1.0,0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Sorry. Det blir ikke noe mer av Den siste viking.'
+                'feedback' => 'Vær deg selv 110 prosent!.'
             ),
             array(
                 'text' => 'Humor',
                 'score' => '0,1.0,0,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Hvordan vet du at en bil er fra Jamaica? På REGGAEstreringsskiltet!'
+                'feedback' => 'Har du hørt den om …'
             ),
             array(
                 'text' => 'Underholdning',
