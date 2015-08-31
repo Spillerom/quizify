@@ -29,23 +29,19 @@ require_once "set_env.php";
     <![endif]-->
 </head>
 <body class="start-end">
-	<script>
-	  window.fbAsyncInit = function() {
-		FB.init({
-		  appId      : '1630666833841212',
-		  xfbml      : true,
-		  version    : 'v2.4'
-		});
-	  };
-
-	  (function(d, s, id){
-		 var js, fjs = d.getElementsByTagName(s)[0];
-		 if (d.getElementById(id)) {return;}
-		 js = d.createElement(s); js.id = id;
-		 js.src = "//connect.facebook.net/en_US/sdk.js";
-		 fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
-	</script>
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+        FB.init({appId: '1630666833841212', status: true, cookie: true,
+        xfbml: true});
+        };
+        (function() {
+        var e = document.createElement('script'); e.async = true;
+        e.src = document.location.protocol +
+        '//connect.facebook.net/en_US/all.js';
+        document.getElementById('fb-root').appendChild(e);
+        }());
+    </script>
 
     <header class="logo">
 		<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
