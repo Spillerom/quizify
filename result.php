@@ -28,7 +28,7 @@ require_once "set_env.php";
         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
-<body class="start-end">
+<body class="start-end" ontouchstart="" onmouseover="">
 	<script>
 	  window.fbAsyncInit = function() {
 		FB.init({
@@ -90,16 +90,7 @@ require_once "set_env.php";
     </section> 
    
     <section id="bottom-space"></section>
-
-    <!-- Body border -->
-    <!--[if lte IE 6]>
-        <style>#top, #bottom, #left, #right { display: none; }</style>
-    <![endif]-->
-    <b id="left"></b>
-    <b id="right"></b>
-    <b id="top"></b>
-    <b id="bottom"></b>
-    
+   
      <!-- jQuery -->
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

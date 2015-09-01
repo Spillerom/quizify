@@ -5,8 +5,8 @@ $( document ).ready(function() {
 	var currentQuestion = 1;
     var numQuestions = 7;
 
-    var questionAnswerDelay = 1.0;
-    var questionFeedbackDelay = 3.0;
+    var questionAnswerDelay = .8;
+    var questionFeedbackDelay = 2.0;
 
     var backgroundClasses = ['spm-1','spm-2','spm-3','spm-4','spm-5','spm-1','spm-2'];
 

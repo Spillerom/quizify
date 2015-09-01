@@ -24,7 +24,7 @@ $numQuestions = count($questions);
 		<!-- <link rel="shortcut icon" href="favicon.ico" /> -->    
 		
 		<!-- Here's Golden Gridlet, the grid overlay script. -->
-		<!-- /* <script src="js/GGS.js"></script> */ -->
+		<script src="js/GGS.js"></script> 
 				
 		<!-- 
 			This script enables structural HTML5 elements in old IE.
@@ -35,14 +35,16 @@ $numQuestions = count($questions);
 		<![endif]-->
 		
 	</head>
-	<body lang="no">
+	<body lang="no" class="spm-1" ontouchstart="" onmouseover="">
 		<header class="logo">
 		    <img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
 		</header>
 		
 		<section class="oneway">
 			<section class="wrapper">
-                 <nav class="text">
+				<div class="nav-container">
+                <!--
+ <nav class="text">
                     <ul>
                         <?php
                         for( $i=0; $i<$numQuestions; $i++ ) {
@@ -55,6 +57,7 @@ $numQuestions = count($questions);
                         ?>
                     </ul>
                     </nav>
+-->
 	                <nav class="symbols">
                     <ul>
                         <?php
@@ -68,6 +71,7 @@ $numQuestions = count($questions);
                         ?>
                     </ul>
 				</nav>
+				</div>
 			</section>
 		</section>
 						
@@ -132,15 +136,6 @@ $numQuestions = count($questions);
             }
             ?>
         </div>
-
-		<!-- Body border -->
-		<!--[if lte IE 6]>
-			<style>#top, #bottom, #left, #right { display: none; }</style>
-		<![endif]-->
-		<b id="left"></b>
-		<b id="right"></b>
-		<b id="top"></b>
-		<b id="bottom"></b>
 		
 		<!-- jQuery -->
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>

@@ -58,6 +58,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 article,
@@ -203,10 +204,6 @@ h1, h2 {
   margin: 1.923077em 0 1.2em;
 }
 
-h1.question{
-	margin: 0 0 1.2em;
-}
-
 h2 {
   font-weight: normal;
 }
@@ -254,21 +251,15 @@ p.message{
   margin: 1.1428571428571428em 0 0.5714285714285714em;
 }
 
-.oneway, .twoway {
-	  margin: 0 5.555555555555555%;
-	  clear: both;
-	}
-
 header{
 	width: 100%;
 	clear: both;
 }
 
-.nav-container{
-	width: 70%;
-    height: 2.5em;
-    margin: 4em 0 3em 13%;
-    }
+.oneway, .twoway {
+	  margin: 0 5.555555555555555%;
+	  clear: both;
+	}
 
 .oneway .wrapper{
 	width: 100%;
@@ -282,20 +273,23 @@ header{
   	text-align: center;
 }
 
+.nav-container{
+	width: 70%;
+    margin: 3em 0 3em 13.1%;
+}
+
 h1.question{
 	width:100%;
+	margin: 0 0 1em 0;
 }
 
 .logo{
 	margin: 0;
+	padding: 1.5em 0;
 }
 
 h1.massive{
 	font-size: 1.5em;
-}
-
-.logo{
-    padding: 1.5em 0;
 }
 
 .btntease-contain{
@@ -306,14 +300,6 @@ h3.tease{
 	margin: 2em 0 2em;
 }
 
-@media screen and (max-width: 40em) {
-		
-	/* Don´t show page border */
-	#top, #bottom, #left, #right { 
-  		display: none; 
-  	}
-  	
- }
 /*
 *
 *  Four-column grid active
@@ -346,6 +332,10 @@ h3.tease{
 	    float: left;
 	    width: 100%;
 	  }
+	  
+	  .nav-container{	
+    		margin: 3em 0 3em 13.5%;
+		}
        
 	  h1 {
 	    /* 42px / 48px */
@@ -354,10 +344,6 @@ h3.tease{
 	    line-height: 1.1428571428571428em;
 	    margin: 1.1428571428571428em 0 1.571429em;
 	  }
-	  
-	  .logo{
-			padding: 3em 0;
-	}
 	
 	.btntease-contain{
 		margin-top: 4em;
@@ -389,8 +375,6 @@ h3.tease{
     
   .alternatives .alternative{
   		font-size: 1.2em;
-    	padding: 1.5em 0 0.7em 0;
-    	border-bottom: 1px dotted red;
   }
   		
   .alternatives .alternative:last-child{
@@ -410,6 +394,11 @@ h3.tease{
 		font-size: 2.5em;
 		letter-spacing: -1px;
 	}
+	
+	 .nav-container{	
+    	margin: 3em 0 3em 13.8%;
+	}
+
 	
 	figure{
 		display: none;
@@ -431,27 +420,18 @@ h3.tease{
   }
   
    .twoway .wrapper {
-	float: left;
-	 width: 50%;
+		float: left;
+	 	width: 50%;
 	}
-	
-  .logo{
-  	padding: 3em 0 0 0;
-  }
-  
+	  
   h1.massive{
   	margin-bottom: 1em;
   }
   
   figure{
 		display: block;
+		margin-top: 2em;
 	}
-
-  /* Fungerer bare i en oppløsning.. 
-  h1.question{
-  	width: 16em;
-  }
-  */
 
   .btn{
   	margin-top: 1em;
@@ -482,17 +462,19 @@ h3.tease{
 /*     background: lime; */
   	}
   	
-  	#top, #bottom, #left, #right { 
-  		display: block; 
- 	 }
-    
 	.oneway, .twoway {
     	margin: 0 16.666666666666664%;
+	}
+	
+	.nav-container{	
+    	margin: 3em 0 3em 14.3%;
 	}
 	
 	h3.tease{
 		padding: 0 2em;
 	}
+	
+	
 
 }
 /* @media screen and (min-width: 1392px) */
@@ -505,19 +487,27 @@ h3.tease{
   }
   
    .logo{
-  		padding: 5em 0;
-  }
+  		padding-top: 2.5em;
+  		}
+  	
+  	.nav-container{	
+    	margin: 3em 0 3em 14.4%;
+	}	
   
-  h1.massive{
-		font-size: 3.2em;
-	}
+	  h1.massive{
+			font-size: 3.2em;
+		}
   
-  h3.tease{
-		padding: 0 3em;
+	  h3.tease{
+			padding: 0 3em;
+		}
+	
+	.alternatives{
+		margin-left: 6em;
+		margin-top: 1em;	
 	}
 	
-	
-	
+
 }
 /* @media screen and (min-width: 1680px) */
 @media screen and (min-width: 105em) {
@@ -528,9 +518,13 @@ h3.tease{
 /*     background: blue; */
   }
    
-  .menu h1{
-  	margin: 0 0 0 5%;
+  .logo{
+  	padding-top: 4em;
   }
+  
+  .nav-container{	
+    	margin: 3em 0 3em 14.7%;
+	}	
   
   h1.massive{
 		font-size: 4em;
@@ -540,6 +534,12 @@ h3.tease{
   h3.tease{
 		padding: 0 5em;
 	}
+	
+	.alternatives{
+		margin-top: 2em;	
+	}
+	
+
 }
 /*
 *
@@ -567,6 +567,15 @@ h3.tease{
 	    margin: 0 22%;
 	}
 	
+	.logo{
+  		padding-top: 5em;
+  	}
+  	
+  	.nav-container{	
+    	margin: 3em 0 3em 14.8%;
+	}	
+
+	
 	h1.massive{
 		font-size: 4.5em;
 	}
@@ -578,6 +587,10 @@ h3.tease{
 	
 	 p.message{
 	  	padding: 0 22.5%; 
+	}
+	
+	.alternatives{
+		margin-left: 8em;	
 	}
 }
 /* @media screen and (min-width: 2080px) */

@@ -50,8 +50,7 @@ ol {
     margin-left: 0;
     margin-right: 0;
     /*padding-left: 40px;*/
-} 
-
+}
 
 html{
 	height: 100%;
@@ -62,20 +61,9 @@ body{
 	color: #fff;
 	height: 100%;
     margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-style: normal;
-    
-    /* REMOVE THIS LATER */
-    
-   	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#213a78+0,0a1327+100 */
-	background: #213a78; /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  #213a78 0%, #0a1327 100%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#213a78), color-stop(100%,#0a1327)); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  #213a78 0%,#0a1327 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  #213a78 0%,#0a1327 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  #213a78 0%,#0a1327 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  #213a78 0%,#0a1327 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#213a78', endColorstr='#0a1327',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
    }
 
 body.start-end {
@@ -157,29 +145,6 @@ body.start-end {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#922a25', endColorstr='#362e26',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-/*---------------*/
-/* BODY BORDER */
-/*--------------*/
-
-#top, #bottom, #left, #right {
-	background: #223d7b;
-	position: fixed;
-    transition: 1s;
-}
-	#left, #right {
-		top: 0; bottom: 0;
-		width: 10px;
-	}
-		#left { left: 0; }
-		#right { right: 0; }
-		
-	#top, #bottom {
-		left: 0; right: 0;
-		height: 10px;
-	}
-		#top { top: 0; }
-		#bottom { bottom: 0; }
-
 
 /* DIFFERENT BORDER COLORS FOR DIFFERENT SCREENS */
 
@@ -220,6 +185,7 @@ h1{
 	color: #fff;
     padding: 1.6em 2.2em;
     background-color: #d43128;
+    background: rgba(212,49,40,0.5);
     text-decoration: none;
     border-radius: 3px;
     box-sizing: border-box;
@@ -230,7 +196,7 @@ h1{
 }
 
 .btn a:hover, .btn a:focus{
-    background: #b4221a;
+    background: rgba(212,49,40,0.9);
 }
 
 .btn a:active{
@@ -238,16 +204,18 @@ h1{
     top: 2px; 
 }
 
-
-
 /*---------------*/
 /* STEP-BY-STEP NAV */
 /*--------------*/
 
+
 nav {
+    text-align: center;
+    width: 100%;
+   /*  margin: 20px 0; */
     margin-bottom: 2em;
     float: left;
-}
+}   
 
 nav ul, li{
 	list-style: none;
@@ -267,19 +235,19 @@ nav.text li:last-child span {
 nav.symbols li::before {
 	content:"";
     background-color: #fff;
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
     border-radius: 15px;
 	display: block;
-	margin-top: -15px;
+	margin-top: -11px;
 }
 nav.symbols li div {
     opacity: 0;
     background-color: #fff;
-    width: 43px;
-    height: 43px;
+    width: 34px;
+    height: 34px;
     position: absolute;
-    margin: -36px -7px;
+    margin: -27px -7px;
     opacity: 0;
     border-radius: 30px;
 }
@@ -287,13 +255,8 @@ nav.symbols li:first-child div {
     opacity: 0.5;
 }
 
-nav {
-    text-align: center;
-    width: 100%;
-    margin: 20px 0;
-}
 nav.text {
-    margin-top: 4em;
+    margin-top: 1em;
 }
 nav.symbols {
     border-top: 1px solid #fff;
@@ -305,7 +268,7 @@ nav ul {
 }
 
 nav ul li {
-  width: 13%; 
+  width: 13.1%; 
   float: left;
 }
 
@@ -387,19 +350,6 @@ input[type=radio]:not(old):checked +  label > span > span{
 	display: none;
 }
 
-.fullscreen-background {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: #000;
-}
-
-.centered {
-	margin: 0 auto;
-}
-
 .question-container {
 		display: none;
 }
@@ -410,8 +360,15 @@ input[type=radio]:not(old):checked +  label > span > span{
         .alternatives .alternative {
             float: left;
             width: 100%;
+            padding: 1.5em 0 1.5em;
+            font-size: 1.2em;
+            border-bottom: 1px dotted #d22027;
             cursor: pointer;
-            margin-bottom: 1em;
+            -webkit-transition: all .25s ease-in-out;
+			-moz-transition: all .25s ease-in-out;
+			-o-transition: all .25s ease-in-out;
+			-ms-transition: all .25s ease-in-out;
+			transition: all .25s ease-in-out;
         }
             .active-alernative {
                 background: url("../images/circle.png") !important;
@@ -425,12 +382,12 @@ input[type=radio]:not(old):checked +  label > span > span{
                 -webkit-transition: opacity .25s ease-in-out;
             }
             .alternatives .alternative:hover {
-            	 color: #d21f26;
+            	 margin-left: 0.5em;
             }
             .alternatives .alternative .index {
                 float: left;
                 background: #fff;
-                color: #000;
+                color: #d22027;
                 width: 2em;
                 height: 2em;
                 border-radius: 1em;
@@ -443,6 +400,15 @@ input[type=radio]:not(old):checked +  label > span > span{
                 width: 15em;
                 padding-top: 0.25em;
             }
+
+.fullscreen-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+}
 
 #feedbacks { 
     position: fixed;
