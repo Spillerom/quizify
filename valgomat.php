@@ -24,7 +24,7 @@ $numQuestions = count($questions);
 		<!-- <link rel="shortcut icon" href="favicon.ico" /> -->    
 		
 		<!-- Here's Golden Gridlet, the grid overlay script. -->
-		<script src="js/GGS.js"></script> 
+<!-- 		<script src="js/GGS.js"></script>  -->
 				
 		<!-- 
 			This script enables structural HTML5 elements in old IE.
@@ -120,7 +120,7 @@ $numQuestions = count($questions);
 		    
 		</div> <!-- end q-wrapper --> 
 	
-		<div id="feedbacks" class="feedback-wrapper">
+		<div id="feedbacks">
             <div class="fullscreen-background"></div>
 		    <?php
 		    for( $i=0; $i<count($questions); $i++ ) {
