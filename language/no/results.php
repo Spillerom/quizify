@@ -53,6 +53,7 @@ $results = array(
     array('headline' => 'Ditt favorittprogram denne høsten er: <br><br> Forbindelser på Dplay',
     'description' => 'Hei. Dette ble litt rotete og rart, så algoritmen har blitt nødt til å følge sitt eget hjerte. Valget falt derfor på Nett-TV-tjenesten Dplay. For å se på Dplay trenger du abonnement. Send mail med skjermbilde av dette til kundeservice@sbsdiscovery.no og fortell at du har funnet påskeegget i TVNorges valgomat så spanderer vi Nett-TV på deg i et år.'),
 
+
     // FEILMELDING:
     array('headline' => 'Feilmelding',
     'description' => 'Oops! Der skjedde det visst noe som ikke er riktig. Oppdater nettleseren din og prøv igjen.')

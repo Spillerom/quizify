@@ -27,14 +27,8 @@ $posterImages = array(
 );
 
 // 
-$facebookShareImages = array(
-    'images/facebook_share/1200x630_baard.jpg',
-    'images/facebook_share/1200x630_harald.jpg',
-    'images/facebook_share/1200x630_magnus.jpg',
-    'images/facebook_share/1200x630_odda.jpg',
-    'images/facebook_share/1200x630_thodesen.jpg'
-);
-$facebookShareImage = $facebookShareImages[rand(0,4)];
+$facebookShareImage = 'images/facebook_share/1200x630_logo_share.png';
+
 
 // 
 require_once "language/".$language."/results.php";
