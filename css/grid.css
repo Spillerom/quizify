@@ -277,11 +277,6 @@ header{
   	text-align: center;
 }
 
-.logoimg{
-	width: 170px;
-	height: 70px;
-}
-
 .nav-container{
 	width: 70%;
     margin: 3em 0 3em 13.1%;
@@ -419,11 +414,6 @@ nav.symbols li div {
     font-size: 1em;
 /*     background-color: yellow; */
   }
-  
-  .logoimg{
-	width: 258px;
-	height: 105px;
-	}
 	
     
   .alternatives .alternative{

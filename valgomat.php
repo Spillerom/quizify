@@ -37,7 +37,7 @@ $numQuestions = count($questions);
 	</head>
 	<body lang="no" class="spm-1" ontouchstart="" onmouseover="">
 		<header class="logo">
-		    <img class="logoimg" src="images/516x210_logo.png" alt="logo" />
+		    <img src="images/516x210_logo.png" alt="logo" />
 		</header>
 		
 		<section class="oneway">

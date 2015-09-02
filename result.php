@@ -48,7 +48,7 @@ require_once "set_env.php";
 	</script>
 
     <header class="logo">
-		<img class="logoimg" src="images/516x210_logo.png" width="258" height="105" alt="logo" />
+		<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
 	</header>
 
     <section class="oneway">
