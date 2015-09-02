@@ -45,7 +45,7 @@ $questions = array(
             array(
                 'text' => 'Espen Eckbo rydder opp - hjemme',
                 'score' => '5,3,0,0,5,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Kanskje hvis han rydder i sånn fransk hushjelp-kostyme'
+            	'feedback' => 'Kanskje hvis han rydder i sånn fransk hushjelp-kostyme.'
             ),
             array(
                 'text' => '«Odda» og Henrik nakendater',
@@ -65,15 +65,15 @@ $questions = array(
             array(
                 'text' => 'En blind date uten klær.',
                 'score' => '0,0,0,10,0,0,0,0,0,5,0,0,0',
-            	'feedback' => 'Sliter du kanskje på Tinder? (Eventuelt Grindr)'
+            	'feedback' => 'Sliter du kanskje på Tinder? (Eventuelt Grindr).'
             ),
             array(
                 'text' => 'Skamløs kjendisjournalistikk.',
                 'score' => '0,10,0,0,0,0,0,0,0,0,0,0,0',
-            	'feedback' => 'Magnus Devold er på saken.'
+            	'feedback' => 'Magnus Devold er på saken!'
             ),
             array(
-                'text' => 'Lokkene til Vegard Ylvisåker.',
+                'text' => 'Krøllene til Vegard Ylvisåker.',
                 'score' => '0,0,10,0,0,0,0,0,0,0,0,0,0',
             	'feedback' => 'Han lukter godt også, FYI.'
             )
@@ -123,9 +123,9 @@ $questions = array(
         'question' => 'Ylvis er tilbake på skjermen i høst. Hva tenker du om det?',
         'alternatives' => array(
             array(
-                'text' => 'OMG! (:) :) :)) jeg er admin på Kløftas største Ylvis-fanside på Instagram. Er billettene til liveshowet lagt ut?',
+                'text' => 'OMG! (:) :) :)) Jeg er admin på Kløftas største Ylvis-fanside på Insta. Er billettene til liveshowet lagt ut?',
                 'score' => '0,10,50,0,0,0,0,0,0,0,0,0,0',
-                'feedback' => 'Keep calm and sjekk ut billettservice senere i høst.'
+                'feedback' => 'Keep calm and sjekk billettservice senere i høst.'
             ),
             array(
                 'text' => 'Næh, de var bedre før da de var indie i Bergen.',

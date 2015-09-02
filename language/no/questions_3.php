@@ -40,7 +40,7 @@ $questions = array(
         )
     ),
     array(
-        'question' => 'Hvilken av disse historiene tror du er fleip:',
+        'question' => 'Hvilken av disse historiene tror du er fleip?',
         'alternatives' => array(
             array(
                 'text' => 'Petter Schjerven har tapt i håndbak mot Pia Lykke.',
@@ -68,9 +68,9 @@ $questions = array(
                 'feedback' => 'Ingen dansker har vel egentlig rent mel i posen?'
             ),
             array(
-                'text' => 'Odd Magnus «Odda» Williamson. Han kjenner ihvertfall noen',
+                'text' => 'Odd Magnus «Odda» Williamson. Han kjenner ihvertfall noen.',
                 'score' => '0,0,0,0,10,0,0,0,0,0,0,0,0',
-                'feedback' => 'Har du sett gangstertatoveringene hans, eller?.'
+                'feedback' => 'Har du sett gangstertatoveringene hans, eller?'
             ),
             array(
                 'text' => 'Bård Ylvisåker. Får jeg virkelig telefonnummeret til Bård?',
@@ -95,7 +95,7 @@ $questions = array(
 		    array(
 		        'text' => 'Garderoben til Christine Koht.',
 		        'score' => '0,0,0,5,0,0,0,0,5,5,0,0,0',
-		        'feedback' => 'Den har nok mer farger en fabrikken til Jotun'
+		        'feedback' => 'Den har nok mer farger en fabrikken til Jotun.'
         	)
 	    ),
 	),
@@ -133,7 +133,7 @@ $questions = array(
                 'feedback' => 'Knut leser sikkert bare tegneserier på senga hele dagen.'
             ),
             array(
-                'text' => 'At håndverkere på TV er generelt for blide.',
+                'text' => 'At håndverkere på TV generelt er for blide.',
                 'score' => '0,0,0,0,0,0,0,0,0,0,25,0,0',
                 'feedback' => 'Vi har nummeret til noen mugne rørleggere hvis du trenger.'
             )

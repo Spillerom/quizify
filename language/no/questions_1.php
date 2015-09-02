@@ -83,7 +83,7 @@ $questions = array(
         'question' => 'Hva synes du er den beste programkombinasjonen av disse forslagene?',
         'alternatives' => array(
             array(
-                'text' => 'Sinnasnekker`n gifter seg ved første blikk',
+                'text' => 'Sinnasnekker&#39;n gifter seg ved første blikk.',
                 'score' => '0,0,0,0,0,0,0,0,0,10,10,0,0',
                 'feedback' => 'De seertallene kan vi bare drømme om.'
             ),
@@ -123,7 +123,7 @@ $questions = array(
         'question' => 'Hvilket utsagn beskriver deg best?',
         'alternatives' => array(
             array(
-                'text' => 'Det er altfor lite reklame på TV nå om da`n.',
+                'text' => 'Det er altfor lite reklame på TV nå om dagen.',
                 'score' => '0,0,0,0,0,0,0,0,0,0,10,10,0',
             	'feedback' => 'Saklig. Det har du aldri sagt.'
             ),
