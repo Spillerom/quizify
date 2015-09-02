@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+    
+
     // 
     var totalScoreMatrix = [0,0,0,0,0,0,0,0,0,0,0,0,0];
 

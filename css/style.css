@@ -42,16 +42,6 @@
 
 }
 
-ol {
-    display: block;
-    list-style-type: decimal;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    /*padding-left: 40px;*/
-}
-
 html{
 	height: 100%;
 }
@@ -145,35 +135,12 @@ body.start-end {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#922a25', endColorstr='#362e26',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-
-/* DIFFERENT BORDER COLORS FOR DIFFERENT SCREENS */
-
-#top, #bottom, #left, #right {
-	background: #223d7b;
-}
-
-#top, #bottom, #left, #right {
-	background: #223d7b;
-}
-
-#top, #bottom, #left, #right {
-	background: #223d7b;
-}
-
-
-#top, #bottom, #left, #right {
-	background: #223d7b;
-}
-
 /*---------------*/
 /* TYPOGRAPHY+BUTTON   */
 /*--------------*/
-h1{
-	font-family: 'tvnorgebold', 'Helvetica Neue', Arial, sans-serif;
-	font-style: normal;
-}
 
 .btn {
+	font-family: 'tvnorgebold', 'Helvetica Neue', Arial, sans-serif;
 	text-align: center;
 	cursor: pointer;
 	text-transform: uppercase;
@@ -232,6 +199,9 @@ nav.text li:last-child span {
     opacity: 1;
 }
 
+/* MOVED TO GRID.css */
+
+/*
 nav.symbols li::before {
 	content:"";
     background-color: #fff;
@@ -241,6 +211,7 @@ nav.symbols li::before {
 	display: block;
 	margin-top: -11px;
 }
+    
 nav.symbols li div {
     opacity: 0;
     background-color: #fff;
@@ -251,8 +222,10 @@ nav.symbols li div {
     opacity: 0;
     border-radius: 30px;
 }
+*/
+    
 nav.symbols li:first-child div {
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 nav.text {
@@ -397,7 +370,7 @@ input[type=radio]:not(old):checked +  label > span > span{
             }
            .alternative .text {
                 float: left;
-                width: 15em;
+                /* width: 15em; */
                 padding-top: 0.25em;
             }
 

@@ -48,17 +48,18 @@ require_once "set_env.php";
 	</script>
 
     <header class="logo">
-		<img src="images/516x210_logo.png" width="258" height="105" alt="logo" />
+		<img class="logoimg" src="images/516x210_logo.png" width="258" height="105" alt="logo" />
 	</header>
 
     <section class="oneway">
         <section class="wrapper">
             <h1 class="introandresult massive"><?php FlushValue($result['headline']); ?></h1>
         </section>
-        
+            
         <section class="wrapper">
             <p class="message"><?php FlushValue($result['description']); ?></p>
         </section>
+    </section>  
 
         <section class="twoway">
 	        <section class="wrapper">
@@ -86,8 +87,7 @@ require_once "set_env.php";
 		    	</section>
 	    	</section>
 
-    	</section>    
-    </section> 
+    	
    
     <section id="bottom-space"></section>
    
