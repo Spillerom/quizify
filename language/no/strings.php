@@ -24,12 +24,12 @@ $localizedStrings = array(
 
     'WEB_TITLE' => 'Velkommen til TVNorges valgomat',
     'SHARE_TITLE' => 'TVNorges valgomat har bestemt at mitt favorittprogram på TV denne høsten er ',
-    'SHARE_DESCRIPTION' => 'Ta valgomaten her og vær med i trekningen av en signert Ylvis-premie.',
+    'SHARE_DESCRIPTION' => 'Ta vår valgomat!',
 
     'SHARE_BUTTON' => 'Del på Facebook',
     'TRY_AGAIN_BUTTON_1' => 'Ikke helt fornøyd? Vi foreslår at du prøver',
     'TRY_AGAIN_BUTTON_2' => 'Én gang til!',
-    'COMPLETE_TEASE_TEXT' => 'Bli med i trekningen av signert Ylvis-premie'
+    'COMPLETE_TEASE_TEXT' => 'Gi vennene dine litt å humre av:'
 );
 
 // 
